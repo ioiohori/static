@@ -1,0 +1,57 @@
+/* 文字コードの指定。文字化けしないために書く */
+@charset "utf-8";
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  color: red;
+  margin-bottom: 50px;
+}
+.performance ul {
+  list-style: none;
+  font-weight: bold;
+}
+.performance ul li::before {
+  content: "♪";
+}
+
+.topimage {
+  width: 70%;
+}
+.topimage img {
+  width: 100%;
+}
+.introduction {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.introduction li {
+  width: 30%;
+}
+.introduction li img {
+  width: 100%;
+}
+.introduction h3 {
+  color: red;
+  text-align: center;
+}
+.introduction p {
+  text-align: justify;
+  margin:0px;
+}
+.profile {
+  display: flex;
+  justify-content: space-between;
+}
+.profile img {
+  width: 30%;
+  height:400px;
+}
+.profile .contents {
+  width: 60%;
+  border: 3px solid black;
+  border-radius: 15px;
+  padding: 20px;
+}
+.

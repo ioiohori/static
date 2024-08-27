@@ -1,0 +1,179 @@
+<html>
+<head>
+<title>フォームメールサンプル </title>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+<div align="center">
+  <h1>フォームメールサンプル </h1><br>
+  ＊ご自由にお試しください。メールアドレス欄には、実際にサンプルメール（自動返信メール）が送られます。 <br>
+	<br>
+	<br>
+ 以下の欄に記入の上、送信ボタンを押してください。<br> 
+</div>
+
+
+
+      <form method="post" action="./formmailer.cgi">
+  <table border="0" align="center" bgcolor="#666666" cellpadding="0" cellspacing="0">
+	<tr> 
+    <td> 
+        <table border="0" cellspacing="1" cellpadding="3" align="center">
+		  <tr> 
+			<td nowrap valign="top" bgcolor="#FFD9EE">お名前<font color="#FF6600">*</font></td>
+			<td valign="top" bgcolor="#FFFFFF"> 
+			  <input type="text" name="お名前" size="30">
+			</td>
+		  </tr>
+		  <tr> 
+			<td nowrap valign="top" bgcolor="#FFD9EE">URL</td>
+			<td valign="top" bgcolor="#FFFFFF"> 
+			  <input type="text" name="URL" size="30" value="http://">
+			</td>
+		  </tr>
+		  <tr> 
+			<td nowrap valign="top" bgcolor="#FFD9EE">メールアドレス<font color="#FF6600">*</font></td>
+			<td valign="top" bgcolor="#FFFFFF"> 
+			  <input type="text" name="email" size="30">
+			  <br>
+			</td>
+		  </tr>
+		  <tr> 
+			<td nowrap valign="top" bgcolor="#FFD9EE">性別</td>
+			<td valign="top" bgcolor="#FFFFFF"> 
+			  <input type="radio" name="性別" value="男">
+			  男 
+			  <input type="radio" name="性別" value="女">
+			  女</td>
+		  </tr>
+		  <tr> 
+			<td nowrap valign="top" bgcolor="#FFD9EE">お住まいは？</td>
+			<td valign="top" bgcolor="#FFFFFF"> 
+			  <select name="お住まいは？">
+				<option selected value="">都道府県 
+				<option value="北海道">北海道 
+				<option value="青森県">青森県 
+				<option value="岩手県">岩手県 
+				<option value="宮城県">宮城県 
+				<option value="秋田県">秋田県 
+				<option value="山形県">山形県 
+				<option value="福島県">福島県 
+				<option value="茨城県">茨城県 
+				<option value="栃木県">栃木県 
+				<option value="群馬県">群馬県 
+				<option value="埼玉県">埼玉県 
+				<option value="千葉県">千葉県 
+				<option value="東京都">東京都 
+				<option value="神奈川県">神奈川県 
+				<option value="新潟県">新潟県 
+				<option value="富山県">富山県 
+				<option value="石川県">石川県 
+				<option value="福井県">福井県 
+				<option value="山梨県">山梨県 
+				<option value="長野県">長野県 
+				<option value="岐阜県">岐阜県 
+				<option value="静岡県">静岡県 
+				<option value="愛知県">愛知県 
+				<option value="三重県">三重県 
+				<option value="滋賀県">滋賀県 
+				<option value="京都府">京都府 
+				<option value="大阪府">大阪府 
+				<option value="兵庫県">兵庫県 
+				<option value="奈良県">奈良県 
+				<option value="和歌山県">和歌山県 
+				<option value="鳥取県">鳥取県 
+				<option value="島根県">島根県 
+				<option value="岡山県">岡山県 
+				<option value="広島県">広島県 
+				<option value="山口県">山口県 
+				<option value="徳島県">徳島県 
+				<option value="香川県">香川県 
+				<option value="愛媛県">愛媛県 
+				<option value="高知県">高知県 
+				<option value="福岡県">福岡県 
+				<option value="佐賀県">佐賀県 
+				<option value="長崎県">長崎県 
+				<option value="熊本県">熊本県 
+				<option value="大分県">大分県 
+				<option value="宮崎県">宮崎県 
+				<option value="鹿児島県">鹿児島県 
+				<option value="沖縄県">沖縄県 
+			  </select>
+			</td>
+		  </tr>
+		  <tr> 
+			<td nowrap valign="top" bgcolor="#FFD9EE"> 備考</td>
+			<td valign="top" bgcolor="#FFFFFF"> 
+			  <textarea name="備考" cols="50" rows="8"></textarea>
+			</td>
+		  </tr>
+		</table>
+    </td>
+  </tr>
+</table>
+        
+  <div align="center"><font color="#FF6600" size="-1">*</font><font size="-1">印は必須項目です。</font><font size="-1"><br>
+	<br>
+	<br>
+	</font> もしよければアンケートもご記入ください。 
+	<table border="0" align="center" bgcolor="#666666" cellpadding="0" cellspacing="0">
+	  <tr> 
+		<td> 
+		  <table border="0" cellspacing="1" cellpadding="3" align="center">
+			<tr> 
+			  <td nowrap valign="top" bgcolor="#FFD9EE">このCGIを<br>
+				どこで知りましたか？</td>
+			  <td valign="top" bgcolor="#FFFFFF"> 
+				<input type="text" name="どこで知りましたか？" size="30">
+			  </td>
+			</tr>
+			<tr> 
+			  <td nowrap valign="top" bgcolor="#FFD9EE">フォームメーラーの<br>
+				用途はなんですか？ </td>
+			  <td valign="top" bgcolor="#FFFFFF">
+				<input type="radio" name="用途" value="仕事用">
+				仕事用<br>
+				<input type="radio" name="用途" value="プライベート用">
+				プライベート用<br>
+				<input type="radio" name="用途" value="勉強用">
+				勉強用 </td>
+			</tr>
+		  </table>
+		</td>
+	  </tr>
+	</table>
+	<font size="-1"> <br>
+	</font><input type="checkbox" name="formmailer_check">確認画面を出さずに送信<br>
+	<input type="submit" value="送信">
+		  <input type="reset" value="リセット" name="reset">
+		  <br>
+		</div>
+	  </form>
+
+<div align="center">
+  <h2><br>
+	<font color="#FF3333">※AHREFからのお知らせ※</font></h2>
+  <table border="0" align="center" bgcolor="#666666" cellpadding="0" cellspacing="0" width="400">
+	<tr> 
+	  <td> 
+		<table border="0" cellspacing="1" cellpadding="3" align="center" width="400">
+		  <tr bgcolor="#FFFFFF"> 
+			<td valign="top"> AHREFでは、どうしても自力でCGIを設置できない方のために<a href="http://www.ahref.org/cgidaikou.html">CGI代行設置サービス</a>や、 
+			  お使いのサーバーではCGIが許可されていない方のために CGI動作保証の<a href="http://www.ahref.org/hosting.html">AHREFホスティングサービス</a>などもご用意いたしております。<br>
+			  お気軽に<a href="http://www.ahref.org/contact.html">お問い合わせ</a>ください。 
+			</td>
+		  </tr>
+		</table>
+	  </td>
+	</tr>
+  </table>
+ <br><br>
+<table width="640" border="0" cellspacing="0" cellpadding="2" align="center">
+  <tr align="center">
+	<td><font size=-2 color=#999999>&copy;2002 FORMMAILER <a href="http://www.ahref.org/">ahref.org</a></font></td>
+  </tr>
+</table>
+  <br>
+</div>
+</body>
+</html>
