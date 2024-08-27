@@ -1,0 +1,740 @@
+@charset "utf-8";
+
+/*ALL*/
+body{margin:none;
+     background-color:##fcf8f3;
+	 -webkit-text-size-adjust:100%;}
+
+#contents {
+	margin: auto;
+	height: auto;
+	width: 950px;
+	font-size: 14px;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", 		sans-serif;}
+
+#header {
+	height: 50px;
+	width: 950px;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	padding-top: 10px;
+}
+#navigation {
+	height: 35px;
+	width: 950px;
+}
+/*
+#slidebox{
+	position:relative;}
+
+
+.absolute{position:absolute;
+top:50px;
+left:50px;}
+*/
+
+#footer {
+	height: 30px;
+	width: 950px;
+	margin-top: 150px;
+	font-size: 12px;
+	clear: both;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+.clear{clear:both;}
+
+.left{
+	float:left;}
+
+.right{
+	float:right;}
+
+.blueboldfont {
+	font-weight: bold;
+	color: #06C;
+	text-decoration: underline;
+	font-size: 13px;
+}
+
+.redfont {
+	font-weight: bold;
+	color: #C00;
+	font-size: 13px;
+}
+
+.ticketsmallfont{
+	font-size:12px;}
+
+.redboldfont{
+	color:red;
+	font-weight:bold;
+	font-size:17px}
+
+.boldbigfont{
+	font-weight:bold;
+	font-size:20px;}
+
+.linkcolorfont{
+	color:#06C;
+	font-size:15px;}
+
+.smallpinkfont{
+	font-size: 12px;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	color: #F33;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.redunderlinefont{
+	font-weight: bold;
+	color: #F00;
+	text-decoration: underline;
+	font-size:13px;
+}
+
+.top30{margin-top:30px;}
+
+.text{
+	font:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+	width:950px;
+	}
+
+.smallfont{
+	font-size:13px;}
+
+.moresmallfont{
+	font-size:11px;}
+
+.topalign{
+	vertical-align:text-top;}
+
+
+
+/*except index*/
+#title {
+	height: 30px;
+	width: 950px;
+	margin-top: 60px;
+	margin-bottom:20px;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic",   sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+
+
+/*index*/
+
+#indexcontents {
+	margin: auto;
+	height: auto;
+	width: 950px;
+	font-size: 14px;
+	line-height:130%;}
+
+#wedutop {
+	float: right;
+	height: 34px;
+	width: 285px;
+}
+
+#indextitle {
+	height: 35px;
+	width: 950px;
+	margin-top: 40px;
+}
+
+.subtitle {
+	font-size:24px;
+	height: 30px;
+	width: 950px;
+	margin-top:40px;
+	margin-bottom: 5px;
+	font-style:bold;
+}
+
+.concertinformation{
+	background-color:white;
+
+	width: 950px;
+	margin-bottom:30px;
+}
+.concertinformation img{
+  border: 3px solid black;
+
+}
+.initialize{
+  display: flex;
+}
+.initialize td a {
+  white-space: nowrap;
+}
+
+
+.indexconcertname {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #F33;
+	width: 450px;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+
+
+
+.more {
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.video {
+	float: right;
+	width: 231px;
+}
+
+.news {
+	height: 136px;
+	width: 686px;
+	margin-right: 5px;
+	overflow: auto;
+	background-color: #FFF;
+	border: thin solid #CCC;
+	padding: 7px;
+	margin-bottom: 30px;
+}
+
+.newstitle {
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.newscontents {
+	font-size: 13px;
+}
+.date {
+	font-size: 13px;
+	font-weight: bold;
+	color: #900;
+}
+
+
+.linkbanner {
+	height: 130px;
+	width: 155px;
+	padding-top: 0px;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+/*ticket*/
+.ticketimage{
+	height: 230px;
+	width: 350px;
+	float: left;
+	margin-left: 5px;
+	clear: left;
+}
+
+
+/* .ticketconcertname{
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: #F33;
+	}
+
+.tickettext{
+	height: 200px;
+	width: 345px;
+	font-size: 14px;
+	line-height: 130%;
+	clear: both;
+	float: left;
+	background-color:white;
+} */
+
+#tirashi {
+	height: 300px;
+	width: 220px;
+	padding-top: 100px;
+}
+#tirashi img {
+  border-color: black
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 5px #ccc;
+}
+.hatsubai {
+	height: 270px;
+	width: 600px;
+	margin-top: 10px;
+	line-height:130%;
+}
+
+.tickets {
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 50px 0 0;
+  padding: 0;
+  width: 100%;
+  justify-content: space-between;
+
+}
+.tickets img{
+  border: 3px solid black
+}
+.tickets ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tickets > li {
+  width: 30.5%;
+  margin-right: 0.333%;
+  margin-bottom: 50px;
+}
+
+.tickets > li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.tickets > li img {
+  width: 100%;
+  height: 205px;
+}
+
+.tickets > li h2, .tickets > li h3 {
+  color: red;
+  font-weight: bold;
+  margin: 0;
+}
+
+.tickets > li h2 {
+  font-size: 20px;
+}
+
+.tickets > li h3 {
+  font-size: 16px;
+}
+
+.tickets .links {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.tickets .links a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #06C;
+}
+
+.tickets .links li:first-of-type {
+  margin-right: 10px;
+}
+
+
+
+
+.listsolidline {
+	background-color: #FFF;
+	border-collapse: collapse;
+	border: 1px solid #666;
+}
+
+.listsolidline td{
+	border: 1px solid #666;
+	padding-left: 10px;
+	height:40px;
+}
+
+
+
+
+
+
+
+/*concert*/
+
+
+#concertimage {
+	height: 200px;
+	width: 204px;
+
+}
+
+.concerttextname {
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+	height: 50px;
+	width: 520px;
+	padding-top: 5px;
+}
+
+.concerttext{
+	width:520px;
+	font-size:13px;
+	padding-right:7px;
+	padding-left:7px;
+	margin-bottom:30px;}
+
+.concertmore{
+	font:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;}
+
+
+
+.member{width:950px;
+		margin-top:60px;
+		}
+
+.memberfirst{width:950px;
+		}
+
+.member table tr{vertical-align:top;}
+
+.memberfirst table tr{vertical-align:top;}
+
+#topimage{
+	height: 300px;
+	width: 950px;
+	margin-bottom: 50px;
+}
+
+#photos{
+	margin-top:30px;}
+
+
+#video1 {
+	clear: both;
+	height: 380px;
+	width: 950px;
+	padding-top: 50px;
+}
+#video2 {
+	clear: both;
+	height: 467px;
+	width: 950px;
+	padding-top: 20px;
+}
+
+
+#profile {
+	margin-top: 20px;
+	clear: both;
+	padding-top: 20px;
+	border-top-style: dashed;
+	border-bottom-style: dashed;
+	border-top-color: #666;
+	border-bottom-color: #666;
+	border-top-width: .5px;
+	border-bottom-width: .5px;
+}
+
+
+
+
+
+
+/*producer*/
+#menu {
+	height: 160px;
+	width: 180px;
+	float: left;
+}
+
+#aboutustext {
+	float: right;
+	width: 755px;
+	font-size: 14px;
+	line-height: 140%;
+	background-color: #FFF;
+	padding-left: 8px;
+	margin-bottom:100px;
+
+}
+
+#book {
+	height: 150px;
+	width: 755px;
+	margin-top: 100px;
+	margin-bottom:50px;
+}
+
+
+
+
+
+
+
+/*aboutus*/
+#bottomunderline td{
+	border-bottom:#999 thin solid;
+	}
+
+#aboutusmenu {
+	float: left;
+	height: 150px;
+	width: 180px;
+}
+
+
+
+
+
+
+
+/*wedu page*/
+#wedulogo {
+	float: left;
+	height: 135px;
+	width: 430px;
+	background-color: #FFF;
+	margin-left: 20px;
+	padding-top: 10px;
+	margin-bottom:50px;
+	}
+
+
+.wedupoints{
+	color:#FFF;
+	font-weight:bold;
+	background-color:#fe4b60;
+	font-size:18px;
+	width:300px;
+	height:30px;
+	padding-left:10px;
+	padding-top:12px;
+	vertical-align:middle;
+	border-radius:10px
+
+	}
+
+.wedupointcontents{
+	font:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	line-height:140%;
+	padding:0px 10px 10px 10px;
+	}
+
+.wedustory{
+	margin-top:30px;
+    background-color:#fed24b;
+	font-size:20px;
+	width:300px;
+	height:30px;
+	padding-left:10px;
+	padding-top:5px;
+	vertical-align:middle;
+	border-radius:10px
+}
+.wedustorycontents{
+	font:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	line-height:140%;
+	width:430px;
+	height:300px;
+	padding:10px;}
+
+
+.weduimage{width:100px;
+    padding:0 8px 0 0}
+
+
+
+
+
+/*Contact*/
+#formWrap {
+	width: 950px;
+	line-height: 120%;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+table.formTable{
+	width:100%;
+	margin:0 auto;
+	border-collapse:collapse;
+
+	font-weight: normal;
+}
+table.formTable td,table.formTable th{
+	border:1px solid #999;
+	padding:10px;
+}
+table.formTable th{
+	width: 30%;
+	font-weight: normal;
+	text-align: left;
+	background-color: #FFFFFF;
+}
+
+
+
+
+
+
+
+/*CD*/
+#cdbutton {
+	height: 35px;
+	width: 180px;
+}
+
+.cdexplain {
+	clear: both;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: bold;
+	font-size: 17px;
+	padding-top: 0px;
+	margin-top: 20px;
+	color: #900;
+}
+.cd {
+	height: 350px;
+	width: 950px;
+	padding-bottom: 100px;
+}
+.cdname {
+	height: 40px;
+	width: 950px;
+}
+.cdimage {
+	float: left;
+	height: 250px;
+	width: 250px;
+	margin-top: 15px;
+}
+.cdtext {
+	float: right;
+	height: 280px;
+	width: 550px;
+	font-size: 13px;
+}
+.cdhowto {
+	width: 950px;
+	margin-bottom:50px;
+	font-size: 15px;
+	padding:15px;
+	line-height: 130%;
+	clear: both;
+	border:#999 thin solid;
+}
+.dvdimage {
+	float: left;
+	height: 348px;
+	width: 250px;
+}
+.dvdtext {
+	float: right;
+	height: 360px;
+	width: 550px;
+	font-size: 13px;
+}
+#omoushikomi{
+	font-size:16px;
+	font-weight:bold;
+	margin-bottom:-20px;
+	margin-top:70px;}
+
+
+
+
+
+
+
+
+/*artist*/
+ .artist{
+	height: 220px;
+	background-color: #FFF;
+}
+
+.artistimage{
+	height: 180px;
+	width: 170px;
+	padding-left: 20px;
+	margin-top: 20px;
+}
+
+.artisttext {
+	width: 550px;
+	margin-top: 20px;
+	padding-right:10px;
+}
+.artistname {
+	font-size: 17px;
+	font-weight: bold;
+}
+.ggstext{
+	margin: 10px;
+	color: #F00;
+	font-size: 120%;
+}
+.nhknews{
+  font-size:9px;
+}
+.nhktitle{
+  color:black;
+  font-weight:bold;
+  font-size:14px;
+  margin-top:10px;
+}
+.nhktv{
+  color:red;
+  font-weight:bold;
+  font-size:14px;
+  margin-top:10px;
+}
+.nhkurl{
+  font-size:9px;
+  color:red;
+  font-weight: bold;
+}
+.nhkurl2{
+  font-size:9px;
+}
+.video video {
+  width: 228px;
+  /* 他にも指定があれば書く */
+}
+.redboldfont1130{
+  font-size: 25px;
+  color:blue;
+  font-weight:bold;
+}
+.ilvoloenglish{
+  font-size: 20px;
+  font-weight: bold;
+}
+.ilvoloenglish２{
+  font-size:4px;
+  font-weight: bold;
+}
+
+
+
+
+/* CSS Document */
