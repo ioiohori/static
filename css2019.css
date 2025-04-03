@@ -10,34 +10,52 @@ a {
 
 main {
   display: block;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
 }
 
 /* 縦・横幅指定の時にボーダー、padding等も含んで計算する */
-header{
+/* header{
  max-width:950px;
  margin:0 auto 10px;
-
-
-}
+} */
 
 .headerImages {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.headtertop{
- display:flex;
- max-width: 950px;
- margin:0 auto;
- justify-content: space-between;
-}
-
-main {
-  max-width: 950px;
+.headtertop {
+  display: flex;
   margin: 0 auto;
+  justify-content: center;
+  background-color: #333333;
+  /* padding: 0 20px; */
+  /* max-width: 1200px; */
 }
+
+.headtertop li {
+  margin: 0 20px;
+}
+
+.headtertop li a {
+  height: 50px;
+
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 0.3s;
+  padding: 0 10px;
+}
+
 /* HPの幅が950～1000だからMAXWIDTHを950に設定する。その後に、余った余白（マージン）を左右多少に分ける。 */
 main h2{
   font-size: 24px;
@@ -96,20 +114,6 @@ font-weight: bold;
   justify-content: space-between;
   margin-bottom: 30px;
   margin-top: 30px;
-}
-.headtertop li a{
-  height: 50px;
-  background-color: #333333;
-  color: #fff;
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-transition: 0.3s;
-
-}
-.headtertop li{
-  width: 20%;
 }
 @media screen and (min-width: 769px) {
   .headtertop li a:hover{
@@ -642,4 +646,66 @@ transition: 0.3s;
   font-size:20px;
   color: brown;
 
+}
+
+/* ベースとなるフォントサイズの設定 */
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+}
+
+/* ニュースセクションのフォントサイズ調整 */
+.news-date {
+  color: #666;
+  margin-right: 20px;
+  min-width: 100px;
+  font-size: 1rem;
+}
+
+.news-title {
+  color: #333;
+  font-size: 1rem;
+}
+
+.news-more a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* ソーシャルフィードのフォントサイズ調整 */
+.social-feed h3 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  .news-date,
+  .news-title,
+  .news-more a {
+    font-size: 0.875rem;
+  }
+
+  .social-feed h3 {
+    font-size: 1rem;
+  }
+
+  .social-feed {
+    padding: 10px;
+  }
 }
