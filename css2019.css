@@ -430,9 +430,6 @@ font-weight: bold;
   line-height: 30px;
   color:brown;
 }
-.companycontent p{
-  line-height: 20px;
-}
 .Aboutusmain{
   display: flex;
   border: 1px solid #000;
