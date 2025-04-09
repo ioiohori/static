@@ -84,6 +84,7 @@
 
     .news-list {
       margin-top: 20px;
+      width: 100%;
     }
 
     .news-item {
@@ -112,6 +113,7 @@
     .twitter-feed,
     .facebook-feed {
       margin-bottom: 30px;
+      width: auto;
     }
 
     h3 {
@@ -151,24 +153,33 @@
   <div class="swiper-pagination"></div>
   <main><!--ヘッダーの中にメイン-->
     <h2>お知らせ News</h2>
-    <div class="news-list">
-      <div class="news-item">
-        <span class="news-date">2025.01.25</span>
-        <span class="news-title">エリーナ・ガランチャ リサイタル2025 追加公演発売開始</span>
+    <div style="display: flex; justify-content: space-between; gap: 20px;">
+
+      <div class="news-list">
+        <div class="news-item">
+          <span class="news-date">2025.04.09</span>
+          <a href="https://lalalaclub.com/concert-65/" target="_blank">
+          <span class="news-title">クラシック系のWebマガジン『ららら♪クラブ』にエリーナ・ガランチャの公演情報が取り上げられました。</span>
+          </a>
+        </div>
+        <div class="news-item">
+          <span class="news-date">2024.04.09</span>
+          <a href="https://spice.eplus.jp/articles/336273" target="_blank">
+          <span class="news-title">エンタメ特化型情報メディア「SPICE」にエリーナ・ガランチャの情報が取り上げられました。</span>
+          </a>
+        </div>
+        <div style="text-align: right; margin-top: 20px;">
+          <a href="news/news-list.html" style="color: #333; text-decoration: none;">お知らせ一覧へ →</a>
+        </div>
       </div>
-      <div class="news-item">
-        <span class="news-date">2024.12.15</span>
-        <span class="news-title">2025年公演スケジュール発表</span>
-      </div>
-      <div class="news-item">
-        <span class="news-date">2024.11.20</span>
-        <span class="news-title">公式SNSアカウント開設のお知らせ</span>
-      </div>
-      <div style="text-align: right; margin-top: 20px;">
-        <a href="news/news-list.html" style="color: #333; text-decoration: none;">お知らせ一覧へ →</a>
+      <div class="facebook-feed" >
+        <iframe
+          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61552790174402&tabs=timeline&width=340&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+          width="350" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+          allowfullscreen="true"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
       </div>
     </div>
-
     <h2><a>コンサート情報　Concert Information</a></h2>
     <div class="concertdetail1">
       <ul class="concertdetail">
@@ -199,17 +210,6 @@
           </div>
         </li>
       </ul>
-    </div>
-    <h2>SNS</h2>
-    <div class="social-feeds" style="display: flex; justify-content: space-between; gap: 20px;">
-      <div class="facebook-feed" style="flex: 1;">
-        <h3>Facebook</h3>
-        <iframe
-          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61552790174402&tabs=timeline&width=340&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-          width="340" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-          allowfullscreen="true"
-          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-      </div>
     </div>
     <hr style="margin: 50px 0;">
     <div class="concertdetail1">
