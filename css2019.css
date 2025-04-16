@@ -706,3 +706,8 @@ body {
     padding: 10px;
   }
 }
+
+.companycontent p {
+  line-height: 2.0;
+  margin-bottom: 20px;
+}
