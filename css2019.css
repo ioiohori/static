@@ -705,8 +705,9 @@ body {
   }
 
   .headerImages {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
     padding: 0 10px;
     gap: 8px;
   }
@@ -718,6 +719,12 @@ body {
 
   .headerImages .logo {
     max-width: 200px;
+  }
+
+  .headerImages img:not(.logo) {
+    width: 30px;
+    height: auto;
+    object-fit: contain;
   }
 
   .headtertop {
