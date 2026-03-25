@@ -5,3 +5,5 @@
 .git/objects/77/22b20036020ff62bdb1bddc152075074e724d1
 .DS_Store
 *.mp4
+_requests/
+CLAUDE.md

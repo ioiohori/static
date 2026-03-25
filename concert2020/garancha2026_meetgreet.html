@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="エリーナ・ガランチャ ミート＆グリート 2026">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130254129-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-130254129-1');
+  </script>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>エリーナ・ガランチャ ミート＆グリート 2026 | TATE CORPORATION テイト・コーポレーション</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+  <link rel="stylesheet" href="../css2019.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Serif+JP:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    .mg-page {
+      font-family: 'Noto Serif JP', 'Yu Mincho', '游明朝', serif;
+      color: #2c2c2c;
+    }
+
+    /* ヒーローセクション */
+    .mg-hero {
+      position: relative;
+      width: 100%;
+      max-height: 85vh;
+      overflow: hidden;
+    }
+    .mg-hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+    .mg-hero-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+      padding: 60px 40px 40px;
+      color: #fff;
+    }
+    .mg-hero-overlay h1 {
+      font-family: 'Cormorant Garamond', 'Noto Serif JP', serif;
+      font-size: 2.4em;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      line-height: 1.5;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+    .mg-hero-overlay .mg-subtitle {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1.1em;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+
+    /* セクション共通 */
+    .mg-section {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 50px 30px;
+    }
+    .mg-section h2 {
+      font-family: 'Cormorant Garamond', 'Noto Serif JP', serif;
+      font-size: 1.6em;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: #5b3a6b;
+      border-bottom: 1px solid #c9a8d8;
+      padding-bottom: 12px;
+      margin-bottom: 30px;
+    }
+    .mg-section p, .mg-section li {
+      font-size: 1.05em;
+      line-height: 2;
+      font-weight: 300;
+      letter-spacing: 0.05em;
+    }
+
+    /* 区切り線 */
+    .mg-divider {
+      width: 60px;
+      height: 1px;
+      background: #c9a8d8;
+      margin: 0 auto;
+    }
+
+    /* 日程 */
+    .mg-date-block {
+      background: #f9f5fb;
+      border-left: 4px solid #9b6bb0;
+      padding: 20px 25px;
+      margin: 15px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .mg-date-block strong {
+      font-weight: 500;
+      color: #5b3a6b;
+    }
+
+    /* 参加費 */
+    .mg-price {
+      text-align: center;
+      font-family: 'Cormorant Garamond', 'Noto Serif JP', serif;
+      font-size: 2em;
+      font-weight: 600;
+      color: #5b3a6b;
+      letter-spacing: 0.08em;
+      margin: 20px 0;
+    }
+    .mg-price-tax {
+      font-size: 0.5em;
+      font-weight: 300;
+      color: #888;
+    }
+
+    /* 特典リスト */
+    .mg-benefits {
+      list-style: none;
+      padding: 0;
+      counter-reset: benefit;
+    }
+    .mg-benefits li {
+      display: flex;
+      align-items: flex-start;
+      padding: 18px 0;
+      border-bottom: 1px solid #ece3f0;
+      counter-increment: benefit;
+    }
+    .mg-benefits li:last-child {
+      border-bottom: none;
+    }
+    .mg-benefits li::before {
+      content: counter(benefit);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 36px;
+      height: 36px;
+      background: #9b6bb0;
+      color: #fff;
+      border-radius: 50%;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1em;
+      font-weight: 600;
+      margin-right: 20px;
+      margin-top: 2px;
+    }
+
+    /* 画像セクション */
+    .mg-photo-section {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 30px 40px;
+      text-align: center;
+    }
+    .mg-photo-section img {
+      width: 60%;
+      max-width: 450px;
+      height: auto;
+      border-radius: 4px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+    }
+    .mg-photo-credit {
+      font-size: 0.8em;
+      color: #999;
+      margin-top: 10px;
+      letter-spacing: 0.05em;
+    }
+
+    /* カルメン ギャラリー */
+    .mg-gallery {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 30px 20px;
+    }
+    .mg-gallery h2 {
+      font-family: 'Cormorant Garamond', 'Noto Serif JP', serif;
+      font-size: 1.6em;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: #5b3a6b;
+      border-bottom: 1px solid #c9a8d8;
+      padding-bottom: 12px;
+      margin-bottom: 30px;
+    }
+    .mg-gallery-wide {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .mg-gallery-wide img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+      object-fit: cover;
+      max-height: 400px;
+    }
+    .mg-gallery-pair {
+      display: flex;
+      gap: 20px;
+    }
+    .mg-gallery-pair img {
+      width: 50%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 4px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+    }
+
+    /* チャリティ */
+    .mg-charity {
+      background: #f9f5fb;
+      text-align: center;
+      padding: 40px 30px;
+    }
+    .mg-charity p {
+      max-width: 860px;
+      margin: 0 auto;
+      font-size: 1.05em;
+      line-height: 2;
+      font-weight: 300;
+      letter-spacing: 0.05em;
+    }
+
+    /* 注意事項 */
+    .mg-notes {
+      list-style: none;
+      padding: 0;
+    }
+    .mg-notes li {
+      padding: 8px 0;
+      padding-left: 1.2em;
+      text-indent: -1.2em;
+      font-size: 0.95em;
+      color: #666;
+    }
+
+    /* 申込み */
+    .mg-contact-box {
+      background: #5b3a6b;
+      color: #fff;
+      text-align: center;
+      padding: 30px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    .mg-contact-box .mg-tel {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2em;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      margin: 10px 0;
+    }
+    .mg-contact-box p {
+      color: rgba(255,255,255,0.85);
+      font-size: 0.95em;
+      line-height: 1.8;
+    }
+
+    /* 戻るリンク */
+    .mg-back {
+      text-align: center;
+      padding: 40px 0;
+    }
+    .mg-back a {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1em;
+      color: #9b6bb0;
+      text-decoration: none;
+      letter-spacing: 0.08em;
+      border-bottom: 1px solid #c9a8d8;
+      padding-bottom: 4px;
+      transition: color 0.3s;
+    }
+    .mg-back a:hover {
+      color: #5b3a6b;
+    }
+  </style>
+</head>
+
+<body>
+  <header><!--全ぺージ共通ヘッダー-->
+    <div class="headerImages">
+      <img class="logo" src="../headernavi/logo2.png" alt="テイト・コーポレーション">
+      <img src="../index/wedu_03.png" alt="テイト・コーポレーションはWeduを応援しています。">
+    </div>
+
+    <ul class="headtertop">
+      <li style="text-align: center;"><a href="../index.html">ホーム</a></li>
+      <li style="text-align: center;"><a href="../news/news-list.html">お知らせ</a></li>
+      <li style="text-align: center;"><a href="../ticket.html">チケットのお申込み</a></li>
+      <li style="text-align: center;"><a href="../company tate/producer2019.html">会社概要</a></li>
+      <li style="text-align: center;"><a href="../kontact/contact2019.html">お問い合わせ</a></li>
+    </ul>
+  </header>
+
+  <div class="mg-page">
+
+    <!-- ヒーロー画像 -->
+    <div class="mg-hero">
+      <img src="../index/garancha_purple.jpg" alt="エリーナ・ガランチャ">
+      <div class="mg-hero-overlay">
+        <h1>Meet &amp; Greet</h1>
+        <div class="mg-subtitle">エリーナ・ガランチャ公演チケットご購入の皆様へ<br>『ミート＆グリート』開催のお知らせ</div>
+      </div>
+    </div>
+
+    <!-- 開催概要 -->
+    <div class="mg-section">
+      <h2>Event</h2>
+      <div class="mg-date-block">
+        <strong>11月1日(日)</strong><br>
+        すみだトリフォニーホール　大ホール
+      </div>
+      <div class="mg-date-block">
+        <strong>11月3日(火・祝)</strong><br>
+        サントリーホール 大ホール
+      </div>
+    </div>
+
+    <div class="mg-divider"></div>
+
+    <!-- 参加費 -->
+    <div class="mg-section">
+      <h2>Price</h2>
+      <div class="mg-price">
+        ¥100,000 <span class="mg-price-tax">（税込）</span>
+      </div>
+      <p style="text-align: center; font-size: 0.95em; color: #888;">以下の特典が含まれます</p>
+    </div>
+
+    <div class="mg-divider"></div>
+
+    <!-- 特典 -->
+    <div class="mg-section">
+      <h2>Benefits</h2>
+      <ul class="mg-benefits">
+        <li>エリーナ・ガランチャとの写真撮影（お1人様1枚）</li>
+        <li>公演パンフレット（サイン付き）1冊</li>
+        <li>来日記念盤CD　エリーナ・ガランチャ「夜が訪れるとき」1枚</li>
+        <li>イタリア産レモンチェッロ（リキュール）オリジナルグラス2個付き</li>
+        <li>VIPバックステージパス</li>
+      </ul>
+    </div>
+
+    <!-- 写真 -->
+    <div class="mg-photo-section">
+      <img src="../index/garancha_dg.jpg" alt="エリーナ・ガランチャ">
+      <div class="mg-photo-credit">&copy; Deutsche Grammophon</div>
+    </div>
+
+    <!-- カルメン ギャラリー -->
+    <div class="mg-gallery">
+      <h2>As Carmen</h2>
+      <div class="mg-gallery-wide">
+        <img src="../index/garancha_carmen1.jpg" alt="エリーナ・ガランチャ カルメン">
+      </div>
+      <div class="mg-gallery-pair">
+        <img src="../index/garancha_carmen2.jpg" alt="エリーナ・ガランチャ カルメン">
+        <img src="../index/garancha_carmen3.jpg" alt="エリーナ・ガランチャ カルメン">
+      </div>
+    </div>
+
+    <div style="margin: 40px 0;"></div>
+
+    <!-- チャリティ -->
+    <div class="mg-charity">
+      <div class="mg-section" style="padding: 10px 30px;">
+        <h2>Charity</h2>
+        <p>
+          「ミート＆グリート」参加費の一部は<br>
+          『Wedu』のチャリティ基金に寄付されます。
+        </p>
+      </div>
+    </div>
+
+    <!-- 注意事項 -->
+    <div class="mg-section">
+      <h2>Notes</h2>
+      <ul class="mg-notes">
+        <li>※対象となる公演日のチケットをご購入された方々が応募対象となります。</li>
+        <li>※ミート＆グリートは、公演終了後に実施されます。</li>
+        <li>※撮影はプロのカメラマンによって行われます。</li>
+      </ul>
+    </div>
+
+    <div class="mg-divider"></div>
+
+    <!-- お申込み -->
+    <div class="mg-section">
+      <h2>Application</h2>
+      <p>
+        <strong>受付期間：</strong>後日お知らせいたします<br>
+        受付期間内に於いて所定申込み数に達した時点で受付を終了します。
+      </p>
+      <div class="mg-contact-box">
+        <p>お申込み先</p>
+        <div class="mg-tel">03-3402-9977</div>
+        <p>
+          テイト・コーポレーション<br>
+          〒150-0001 東京都渋谷区神宮前3-2-14
+        </p>
+      </div>
+    </div>
+
+    <!-- 戻るリンク -->
+    <div class="mg-back">
+      <a href="garancha2026.html">← エリーナ・ガランチャ リサイタル2026 公演情報に戻る</a>
+    </div>
+
+  </div>
+
+  <!--footer-->
+  <footer>
+    <ul class="company">
+      <li><a href="../sitemapetc/privacypolicy2019.html">プライバシーポリシー</a></li>
+      <li><a href="../sitemapetc/aboutthesite2019.html">サイトのご利用について</a></li>
+      <li><a href="#top">トップへ</a></li>
+      <li><a href="../company tate/producer2019.html">会社概要</a></li>
+    </ul>
+    <ul class="linkbanner right">
+      <li>
+        <a class="wedu2">
+          <a href="../company tate/wedu2019.html">
+            <img src="../index/wedu-button.jpg" alt="wedu" /></a>
+      </li>
+      <li>
+        <a class="facebook">
+          <a href="https://www.facebook.com/profile.php?id=61552790174402">
+            <img src="../index/facebook.jpg" alt="facebook" /></a>
+      </li>
+      <li>
+        <a class="twitter">
+          <a href="https://x.com/tetsuyakita0521">
+            <img src="../index/twitter.jpg" alt="twitter" /></a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+  <script src="script2019.js" defer></script>
+</body>
+
+</html>

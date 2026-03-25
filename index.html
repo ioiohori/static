@@ -120,6 +120,196 @@
       margin-bottom: 15px;
       color: #333;
     }
+
+    /* ガランチャ2026 コンサート情報 */
+    .gc26-hero img {
+      width: 100% !important;
+      height: auto !important;
+      display: block;
+    }
+    .gc26-detail {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 40px 30px;
+    }
+    .gc26-detail-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .gc26-label {
+      font-size: 0.9em;
+      letter-spacing: 0.3em;
+      color: #c9a8d8;
+      margin-bottom: 10px;
+    }
+    .gc26-detail h3 {
+      font-size: 1.8em;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      margin-bottom: 5px;
+      color: #fff !important;
+      padding: 0;
+      line-height: 1.4;
+    }
+    .gc26-subtitle {
+      font-size: 1.2em;
+      letter-spacing: 0.08em;
+      color: #e0d0e8;
+      margin-bottom: 25px;
+    }
+    .gc26-columns {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+    }
+    .gc26-dates {
+      flex: 1;
+      min-width: 250px;
+    }
+    .gc26-date-item {
+      border-left: 3px solid #9b6bb0;
+      padding-left: 15px;
+      margin-bottom: 15px;
+    }
+    .gc26-date-item .day {
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+    .gc26-date-item .time {
+      font-size: 0.9em;
+      color: #ccc;
+    }
+    .gc26-date-item .venue {
+      font-size: 0.95em;
+      color: #e0d0e8;
+    }
+    .gc26-credits {
+      flex: 1;
+      min-width: 250px;
+      font-size: 0.95em;
+      line-height: 2;
+      color: #ddd;
+    }
+    .gc26-desc {
+      font-size: 0.9em;
+      line-height: 1.8;
+      color: #bbb;
+      margin-bottom: 25px;
+    }
+    .gc26-gallery {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+    .gc26-gallery img {
+      width: 100% !important;
+      height: 200px !important;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    .gc26-btn {
+      display: inline-block;
+      background: #9b6bb0;
+      color: #fff !important;
+      padding: 14px 50px;
+      font-size: 1em;
+      letter-spacing: 0.15em;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .gc26-btn:hover {
+      background: #7b4f90;
+    }
+
+    /* ミート＆グリート */
+    .mg-banner {
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+    .mg-banner a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .mg-banner-inner {
+      display: flex;
+      gap: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+    }
+    .mg-banner-img {
+      flex: 1;
+      min-height: 450px;
+    }
+    .mg-banner-img img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover;
+      display: block;
+    }
+    .mg-banner-info {
+      flex: 1;
+      background: linear-gradient(135deg, #2c1338, #5b3a6b);
+      color: #fff;
+      padding: 40px 35px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .mg-banner-info .mg-label {
+      font-size: 0.85em;
+      letter-spacing: 0.3em;
+      color: #c9a8d8;
+      margin-bottom: 15px;
+    }
+    .mg-banner-info .mg-title {
+      font-size: 2.2em;
+      font-weight: bold;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+      font-family: Georgia, 'Times New Roman', serif;
+    }
+    .mg-banner-info .mg-sub {
+      font-size: 1.1em;
+      letter-spacing: 0.05em;
+      margin-bottom: 25px;
+      color: #e0d0e8;
+    }
+    .mg-banner-info .mg-divider {
+      width: 40px;
+      height: 1px;
+      background: #c9a8d8;
+      margin-bottom: 25px;
+    }
+    .mg-banner-info .mg-benefits-list {
+      font-size: 0.95em;
+      line-height: 2;
+      color: #ddd;
+      margin-bottom: 25px;
+    }
+    .mg-banner-info .mg-price {
+      font-size: 1.6em;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+      font-family: Georgia, 'Times New Roman', serif;
+    }
+    .mg-banner-info .mg-price span {
+      font-size: 0.45em;
+      font-weight: normal;
+      color: #c9a8d8;
+    }
+    .mg-banner-info .mg-link-btn {
+      display: inline-block;
+      border: 1px solid #c9a8d8;
+      padding: 10px 30px;
+      font-size: 0.95em;
+      letter-spacing: 0.1em;
+      color: #e0d0e8;
+      border-radius: 4px;
+      margin-top: 25px;
+    }
   </style>
 </head>
 
@@ -135,9 +325,8 @@
       <li style="text-align: center;"><a href="index.html">ホーム</a></li>
       <li style="text-align: center;"><a href="news/news-list.html">お知らせ</a></li>
       <li style="text-align: center;"><a
-          href="https://myticketnavi.com/event/list?orderby=1&freeword=%E3%83%86%E3%82%A4%E3%83%88%E3%83%BB%E3%82%B3%E3%83%BC%E3%83%9D%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3">チケットのお申込み</a>
+          href="ticket.html">チケットのお申込み</a>
       </li>
-      <li style="text-align: center;"><a href="concert/concert-2.html">コンサート情報</a></li>
       <li style="text-align: center;"><a href="company tate/producer2019.html">会社概要</a></li>
       <li style="text-align: center;"><a href="kontact/contact2019.html">お問い合わせ</a></li>
     </ul>
@@ -146,8 +335,8 @@
   <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <a href="concert2020/ggs_2025.html">
-          <img src="index/gos_banner_top.jpg" alt="グローリー・ゴスペル・シンガーズ" width="100%">
+        <a href="concert2020/garancha2026.html">
+          <img src="index/garancha_banner.jpg" alt="エリーナ・ガランチャ メゾソプラノ リサイタル2026" width="100%">
         </a>
       </div>
     </div>
@@ -158,8 +347,9 @@
     <div style="display: flex; justify-content: space-between; gap: 20px;">
       <div class="news-list">
         <div class="news-item">
-          <span class="news-date">2025.10.30</span>
-          <span class="news-title">グローリー・ゴスペル・シンガーズ公演情報をアップしました！</span>
+          <span class="news-date">2026.03.25</span>
+          <span class="news-title"><a href="concert2020/garancha2026.html">エリーナ・ガランチャ メゾソプラノ リサイタル2026
+              公演情報をアップしました！</a></span>
         </div>
         <div style="text-align: right; margin-top: 20px;">
           <a href="news/news-list.html" style="color: #333; text-decoration: none;">お知らせ一覧へ →</a>
@@ -174,76 +364,71 @@
       </div>
     </div>
     <h2><a>コンサート情報　Concert Information</a></h2>
-    <div class="concertdetail1">
-      <ul class="concertdetail">
-        <li>
-          <div class="concertdetail-sumbnail" style=" background-image: url(index/gos_top_pic.jpg); ">
-          </div>
-          <div class="artistdetail">
-            <h3>グローリー・ゴスペル・シンガーズ</h3>
-            <h5>本場ニューヨークのゴスペルが、あなたの街にやってくる！</h5>
-            <div style="margin: 15px 0;">
-              <div style="font-weight: bold; margin-bottom: 10px;">
-                ☆世界中の観客を熱狂させてきた、深く美しくパワフルな圧巻の歌声！
-              </div>
-              <p style="font-size: small; margin-bottom: 20px;">
-                アフリカ系アメリカ人の歴史に深く根差した、民音オリジナルのゴスペル・ミュージックのステージが実現。
-                本場ニューヨークからゴスペル音楽の実力派、グローリー・ゴスペル・シンガーズを迎え、映画などを通し身近になったゴスペルの熱量を体験していただきます。
-                アフリカ系アメリカ人の歴史に深く根差した、ゴスペル・ミュージック。日本でも映画などを通し身近になったゴスペルを、民音オリジナルステージでお届けいたします。
-              </p>
-              <div style="font-weight: bold; margin-bottom: 10px;">“本場ニューヨークのゴスペル音楽の実力派グローリー・ゴスペル・シンガーズ！”</div>
-              <p style="font-size: small; margin-bottom: 20px;">
-                世界中の観客を熱狂させてきた、ゴスペルグループのグローリー・ゴスペル・シンガーズ。メンバー全員が、ニューヨークの第一線で活躍する実力派シンガーたちです。
-                彼らの実力は、世界的アーティストたち（ホイットニー・ヒューストンやダイアナ・ロスなど）も称賛するほど、歌唱力や表現力は圧巻です。
-              </p>
-              <div style="font-weight: bold; margin-bottom: 10px;">
-                “力強きリズムと歌声を轟かせるコーラスは必見です！”
-              </div>
-              <p style="font-size: small; margin-bottom: 20px;">
-                アメリカの教会音楽とアフリカの伝統音楽が融合して生まれたゴスペル音楽は、抑圧と偏見の歴史の中で、人々を励ます役割を果たしてきました。
-                その情熱的な歌声、そして心おどるリズムとハーモニー。まさに映画『天使にラブ・ソングを…』を思い出させるような、楽しくて心が熱くなるステージへとお連れします。
-              </p>
-              <div style="font-weight: bold; margin-bottom: 10px;">
-                “誰もが楽しんでいただけるようなゴスペルの名曲を歌います！”
-              </div>
-              <p style="font-size: small; margin-bottom: 20px;">
-                コンサートでは、ゴスペルファンはもちろん、初めて聴く方も楽しんでいただけるよう、
-                「オー・ハッピー・デイ」や「ウィ・シャル・オーバーカム」、「アメイジング・グレイス」など、誰もが一度は耳にしたことのあるゴスペルの名曲をお届けします！
-                自然と手拍子やコール＆レスポンスが起こるような、ステージと観客席が心を通わせる
-                コンサートならではの熱量を、ぜひ会場で体感してください！
-              </p>
-              <div style="margin: 20px 0;">
-                <ul class="elinainfo">
-                  <li class="cancelbuttonelina">
-                    <a href="concert2020/ggs_2025.html">
-                      公演詳細情報
-                    </a>
-                  </li>
-                </ul>
-              </div>
+
+    <!-- コンサート詳細 -->
+    <div class="gc26-detail">
+      <div class="gc26-detail-inner">
+        <div class="gc26-label">TATE CORPORATION PRESENTS</div>
+        <h3>エリーナ・ガランチャ</h3>
+        <div class="gc26-subtitle">メゾソプラノ　リサイタル 2026</div>
+        <div class="gc26-columns">
+          <div class="gc26-dates">
+            <div class="gc26-date-item">
+              <div class="day">11月1日(日)</div>
+              <div class="time">開場12:00 / 開演13:00</div>
+              <div class="venue">すみだトリフォニーホール　大ホール</div>
+            </div>
+            <div class="gc26-date-item">
+              <div class="day">11月3日(火・祝)</div>
+              <div class="time">開場12:00 / 開演13:00</div>
+              <div class="venue">サントリーホール 大ホール</div>
             </div>
           </div>
-        </li>
-      </ul>
-    </div>
-    <hr style="margin: 50px 0;">
-    <div class="concertdetail1">
-      <!-- https://youtu.be/b_RZdXwm7Do -->
-      <iframe width="100%" height="415" src="https://www.youtube.com/embed/b_RZdXwm7Do"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <!-- <img src="index/asahi0125.jpg" alt="エリーナ・ガランチャ リサイタル2025" width="100%"> -->
-      <!-- ここに動画を置く indx/Gos.mp4 -->
-      <!-- <video width="100%" height="auto" controls>
-        <source src="index/Gos.mp4" type="video/mp4">
-        お使いのブラウザは動画タグに対応していません。
-      </video> -->
-      <div class="swiper-slide">
-        <a href="concert2020/ggs_2025.html">
-          <img src="index/GGS_banner.jpg" alt="グローリー・ゴスペル・シンガーズ" width="100%">
-        </a>
+          <div class="gc26-credits">
+            出演：エリーナ・ガランチャ（メゾソプラノ）<br>
+            指揮：カレル・マーク・チチョン<br>
+            演奏：新日本フィルハーモニー交響楽団<br>
+            企画・制作・招聘：テイト・コーポレーション
+          </div>
+        </div>
+        <p class="gc26-desc">
+          オペラ界の頂点で活躍し続けるエリーナ・ガランチャ。「暖かく力強く、特別な暗さと情熱的な声」、「圧倒的な存在感」で世界的に有名なオペラハウスの舞台に立ち続ける、今最も注目されるメゾソプラノ歌手が再び来日。
+        </p>
+        <div class="gc26-gallery">
+          <div style="flex: 2;"><img src="index/garancha_carmen1.jpg" alt="カルメン"></div>
+          <div style="flex: 1;"><img src="index/garancha_carmen2.jpg" alt="カルメン"></div>
+          <div style="flex: 1;"><img src="index/garancha_carmen3.jpg" alt="カルメン"></div>
+        </div>
+        <div style="text-align: center;">
+          <a href="concert2020/garancha2026.html" class="gc26-btn">公演詳細情報 →</a>
+        </div>
       </div>
+    </div>
+
+    <!-- ミート＆グリート 特別枠 -->
+    <div class="mg-banner">
+      <a href="concert2020/garancha2026_meetgreet.html">
+        <div class="mg-banner-inner">
+          <div class="mg-banner-img">
+            <img src="index/garancha_purple.jpg" alt="エリーナ・ガランチャ ミート＆グリート">
+          </div>
+          <div class="mg-banner-info">
+            <div class="mg-label">SPECIAL EVENT</div>
+            <div class="mg-title">Meet &amp; Greet</div>
+            <div class="mg-sub">エリーナ・ガランチャ<br>『ミート＆グリート』開催決定</div>
+            <div class="mg-divider"></div>
+            <div class="mg-benefits-list">
+              ■ 写真撮影（お1人様1枚）<br>
+              ■ サイン入りパンフレット<br>
+              ■ 来日記念盤CD<br>
+              ■ イタリア産レモンチェッロ<br>
+              ■ VIPバックステージパス
+            </div>
+            <div class="mg-price">¥100,000 <span>（税込）</span></div>
+            <div><span class="mg-link-btn">詳細はこちら →</span></div>
+          </div>
+        </div>
+      </a>
     </div>
   </main>
   <footer>
