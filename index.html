@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130254129-1"></script>
   <script>
@@ -309,6 +310,48 @@
       color: #e0d0e8;
       border-radius: 4px;
       margin-top: 25px;
+    }
+
+    /* レスポンシブ対応 */
+    @media screen and (max-width: 768px) {
+      body { font-size: 15px; }
+      .headerImages { flex-direction: column; align-items: center; padding: 0 10px; }
+      .headerImages img { max-width: 100%; height: auto; }
+      .headtertop { flex-wrap: wrap; }
+      .headtertop li { margin: 0 8px; }
+      .headtertop li a { height: 40px; font-size: 0.85em; padding: 0 5px; }
+      main { padding: 0 15px; }
+      main h2 { font-size: 18px; padding-left: 0.6em; border-left-width: 12px; }
+      .news-item { flex-direction: column; gap: 5px; }
+      .news-date { min-width: auto; font-size: 0.9em; }
+      .news-title { font-size: 0.95em; line-height: 1.6; }
+      div[style*="display: flex; justify-content: space-between; gap: 20px;"] {
+        flex-direction: column !important;
+      }
+      .facebook-feed iframe { width: 100% !important; max-width: 100%; }
+      .social-feeds { flex-direction: column; }
+      .gc26-detail { padding: 25px 15px; }
+      .gc26-detail h3 { font-size: 1.3em; }
+      .gc26-subtitle { font-size: 1em; }
+      .gc26-columns { flex-direction: column; gap: 15px; }
+      .gc26-dates { min-width: auto; }
+      .gc26-credits { min-width: auto; font-size: 0.9em; }
+      .gc26-desc { font-size: 0.85em; }
+      .gc26-gallery { flex-direction: column; }
+      .gc26-gallery img { height: auto !important; }
+      .gc26-btn { padding: 12px 30px; font-size: 0.9em; }
+      .mg-banner { margin-top: 30px; }
+      .mg-banner-inner { flex-direction: column; }
+      .mg-banner-img { min-height: 250px; }
+      .mg-banner-info { padding: 25px 20px; }
+      .mg-banner-info .mg-title { font-size: 1.6em; }
+      .mg-banner-info .mg-sub { font-size: 0.95em; }
+      .mg-banner-info .mg-price { font-size: 1.3em; }
+      .mg-banner-info .mg-benefits-list { font-size: 0.9em; }
+      footer .company { flex-wrap: wrap; justify-content: center; gap: 5px; }
+      footer .company li { margin-left: 10px; font-size: 0.85em; }
+      .linkbanner.right { flex-wrap: wrap; justify-content: center; gap: 10px; }
+      .linkbanner.right img { width: 100px; }
     }
   </style>
 </head>

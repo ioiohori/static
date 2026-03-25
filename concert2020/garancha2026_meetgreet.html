@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="エリーナ・ガランチャ ミート＆グリート 2026">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130254129-1"></script>
@@ -284,6 +285,41 @@
     }
     .mg-back a:hover {
       color: #5b3a6b;
+    }
+
+    /* レスポンシブ対応 */
+    @media screen and (max-width: 768px) {
+      .headerImages { flex-direction: column; align-items: center; padding: 0 10px; }
+      .headerImages img { max-width: 100%; height: auto; }
+      .headtertop { flex-wrap: wrap; }
+      .headtertop li { margin: 0 8px; }
+      .headtertop li a { height: 40px; font-size: 0.85em; padding: 0 5px; }
+      .mg-hero-overlay { padding: 30px 20px 20px; }
+      .mg-hero-overlay h1 { font-size: 1.6em; }
+      .mg-hero-overlay .mg-subtitle { font-size: 0.9em; }
+      .mg-section { padding: 30px 15px; }
+      .mg-section h2 { font-size: 1.3em; }
+      .mg-section p, .mg-section li { font-size: 0.95em; line-height: 1.8; }
+      .mg-date-block { padding: 15px 18px; }
+      .mg-price { font-size: 1.6em; }
+      .mg-benefits li { padding: 14px 0; }
+      .mg-benefits li::before { min-width: 30px; height: 30px; font-size: 0.95em; margin-right: 15px; }
+      .mg-photo-section img { width: 85%; }
+      .mg-gallery { padding: 0 15px 20px; }
+      .mg-gallery-pair { flex-direction: column; gap: 15px; }
+      .mg-gallery-pair img { width: 100%; height: auto; }
+      .mg-gallery-wide img { max-height: 250px; }
+      .mg-charity { padding: 25px 15px; }
+      .mg-charity p { font-size: 0.95em; }
+      .mg-notes li { font-size: 0.88em; line-height: 1.7; }
+      .mg-contact-box { padding: 20px 15px; }
+      .mg-contact-box .mg-tel { font-size: 1.5em; }
+      .mg-contact-box p { font-size: 0.88em; }
+      .mg-back a { font-size: 0.9em; }
+      footer .company { flex-wrap: wrap; justify-content: center; gap: 5px; }
+      footer .company li { margin-left: 10px; font-size: 0.85em; }
+      .linkbanner.right { flex-wrap: wrap; justify-content: center; gap: 10px; }
+      .linkbanner.right img { width: 100px; }
     }
   </style>
 </head>

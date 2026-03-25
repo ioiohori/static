@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130254129-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -79,6 +80,31 @@
       line-height: 1.9;
       font-weight: 300;
       color: #444;
+    }
+
+    /* レスポンシブ対応 */
+    @media screen and (max-width: 768px) {
+      .headerImages { flex-direction: column; align-items: center; padding: 0 10px; }
+      .headerImages img { max-width: 100%; height: auto; }
+      .headtertop { flex-wrap: wrap; }
+      .headtertop li { margin: 0 8px; }
+      .headtertop li a { height: 40px; font-size: 0.85em; padding: 0 5px; }
+      .cp-hero { padding: 35px 15px; }
+      .cp-hero-title { font-size: 1.8em; }
+      .cp-subnav { flex-wrap: wrap; }
+      .cp-subnav a { padding: 10px 15px; font-size: 0.82em; }
+      .cp-section { padding: 30px 15px; }
+      .cp-section-title { font-size: 1.2em; }
+      .artist-card { flex-direction: column; align-items: center; gap: 15px; padding: 20px 0; }
+      .artist-card-img { width: 150px; min-width: 150px; }
+      .artist-card-role { font-size: 0.75em; text-align: center; }
+      .artist-card-name { font-size: 1.05em; text-align: center; }
+      .artist-card-name-en { font-size: 0.9em; text-align: center; }
+      .artist-card-desc { font-size: 0.85em; line-height: 1.7; }
+      footer .company { flex-wrap: wrap; justify-content: center; gap: 5px; }
+      footer .company li { margin-left: 10px; font-size: 0.85em; }
+      .linkbanner.right { flex-wrap: wrap; justify-content: center; gap: 10px; }
+      .linkbanner.right img { width: 100px; }
     }
   </style>
 </head>

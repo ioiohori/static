@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130254129-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -235,6 +236,37 @@
     .cp-company-table .en {
       font-size: 0.85em;
       color: #999;
+    }
+
+    /* レスポンシブ対応 */
+    @media screen and (max-width: 768px) {
+      .headerImages { flex-direction: column; align-items: center; padding: 0 10px; }
+      .headerImages img { max-width: 100%; height: auto; }
+      .headtertop { flex-wrap: wrap; }
+      .headtertop li { margin: 0 8px; }
+      .headtertop li a { height: 40px; font-size: 0.85em; padding: 0 5px; }
+      .cp-hero { padding: 35px 15px; }
+      .cp-hero-title { font-size: 1.8em; }
+      .cp-subnav { flex-wrap: wrap; }
+      .cp-subnav a { padding: 10px 15px; font-size: 0.82em; }
+      .cp-section { padding: 30px 15px; }
+      .cp-section-title { font-size: 1.2em; }
+      .cp-quote { font-size: 1em; padding: 15px 18px; line-height: 1.8; }
+      .cp-message { font-size: 0.9em; line-height: 1.8; }
+      .cp-book { flex-direction: column; align-items: center; padding: 20px 15px; }
+      .cp-book img { width: 100px; }
+      .cp-book-text { font-size: 0.85em; }
+      .cp-history-bg { padding: 30px 15px; }
+      .cp-history-grid { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 10px; }
+      .cp-history-item img { height: 90px; }
+      .cp-history-item p { font-size: 0.7em; padding: 5px 3px; }
+      .cp-company-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      .cp-company-table th { padding: 10px 12px; font-size: 0.85em; width: auto; }
+      .cp-company-table td { padding: 10px 12px; font-size: 0.88em; }
+      footer .company { flex-wrap: wrap; justify-content: center; gap: 5px; }
+      footer .company li { margin-left: 10px; font-size: 0.85em; }
+      .linkbanner.right { flex-wrap: wrap; justify-content: center; gap: 10px; }
+      .linkbanner.right img { width: 100px; }
     }
   </style>
 </head>

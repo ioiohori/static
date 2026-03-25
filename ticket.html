@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="チケットのお申込み - テイト・コーポレーション">
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130254129-1"></script>
   <script>
@@ -125,6 +126,26 @@
     }
     .ticket-web-btn:hover {
       background: #7b4f90;
+    }
+
+    /* レスポンシブ対応 */
+    @media screen and (max-width: 768px) {
+      .headerImages { flex-direction: column; align-items: center; padding: 0 10px; }
+      .headerImages img { max-width: 100%; height: auto; }
+      .headtertop { flex-wrap: wrap; }
+      .headtertop li { margin: 0 8px; }
+      .headtertop li a { height: 40px; font-size: 0.85em; padding: 0 5px; }
+      .ticket-page { padding: 30px 15px; }
+      .ticket-card { padding: 30px 20px; }
+      .ticket-card-label { font-size: 0.8em; }
+      .ticket-card h3 { font-size: 1.2em; }
+      .ticket-tel-number { font-size: 1.5em; }
+      .ticket-tel-hours { font-size: 0.85em; }
+      .ticket-web-btn { padding: 12px 30px; font-size: 1em; }
+      footer .company { flex-wrap: wrap; justify-content: center; gap: 5px; }
+      footer .company li { margin-left: 10px; font-size: 0.85em; }
+      .linkbanner.right { flex-wrap: wrap; justify-content: center; gap: 10px; }
+      .linkbanner.right img { width: 100px; }
     }
   </style>
 </head>

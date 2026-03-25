@@ -685,17 +685,61 @@ body {
 /* レスポンシブ対応 */
 @media screen and (max-width: 768px) {
   html {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   body {
-    font-size: 14px;
+    font-size: 15px;
+    overflow-x: hidden;
+  }
+
+  main {
+    padding: 0 15px;
+  }
+
+  main h2 {
+    font-size: 18px;
+    padding-left: 0.6em;
+    border-left-width: 12px;
+    line-height: 1.8;
+  }
+
+  .headerImages {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    gap: 8px;
+  }
+
+  .headerImages img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .headerImages .logo {
+    max-width: 200px;
+  }
+
+  .headtertop {
+    flex-wrap: wrap;
+    padding: 5px 0;
+  }
+
+  .headtertop li {
+    margin: 0 8px;
+  }
+
+  .headtertop li a {
+    height: 38px;
+    font-size: 0.82em;
+    padding: 0 5px;
   }
 
   .news-date,
   .news-title,
   .news-more a {
-    font-size: 0.875rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
   }
 
   .social-feed h3 {
@@ -704,6 +748,144 @@ body {
 
   .social-feed {
     padding: 10px;
+  }
+
+  .concertdetail > li {
+    flex-direction: column;
+  }
+
+  .concertdetail li img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .concertdetail > li .artistdetail {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .concertdetail-sumbnail {
+    width: 100% !important;
+    min-height: 200px;
+  }
+
+  .elinaconcertdetail {
+    flex-direction: column;
+  }
+
+  .elinaconcertdetail > a {
+    width: 100%;
+  }
+
+  .elinaprofiele {
+    flex-direction: column;
+  }
+
+  .elinaprofiele img {
+    width: 60%;
+    margin: 0 auto 15px;
+    display: block;
+  }
+
+  .elinaprofile-content {
+    width: 100%;
+  }
+
+  .elinaprofile-content p {
+    margin-left: 0;
+  }
+
+  .elinaphoto {
+    flex-direction: column;
+  }
+
+  .elinaphoto img {
+    width: 100%;
+  }
+
+  .elinainfo {
+    flex-direction: column;
+  }
+
+  .hauseinfo {
+    flex-direction: column;
+  }
+
+  .elinatable,
+  .elinascheduletable,
+  .elinaplaytable,
+  .recruittable,
+  .contacttable,
+  .aboutustable {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .concertlist li {
+    width: 30%;
+  }
+
+  .Aboutusmain {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .Aboutusmain li {
+    width: 100%;
+  }
+
+  .Aboutusmain li:not(:first-of-type) {
+    border-left: none;
+    border-top: 1px solid #000;
+  }
+
+  .company {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    padding: 0 10px;
+  }
+
+  .company li {
+    margin-left: 10px;
+    font-size: 0.85em;
+  }
+
+  .linkbanner.right {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .linkbanner.right img {
+    width: 100px;
+  }
+
+  .book2019 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .weduimageleft {
+    flex-direction: column;
+  }
+
+  .weduimageleft img {
+    width: 50%;
+    margin: 5px auto;
+  }
+
+  .wrap-video video {
+    width: 100%;
+    height: auto;
+  }
+
+  .subtitle2 {
+    font-size: 18px;
+    padding-left: 0.6em;
+    border-left-width: 12px;
   }
 }
 
