@@ -722,9 +722,7 @@ body {
   }
 
   .headerImages img:not(.logo) {
-    width: 30px;
-    height: auto;
-    object-fit: contain;
+    display: none;
   }
 
   .headtertop {
