@@ -3,27 +3,132 @@
 
 <head>
   <meta charset="UTF-8">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130254129-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'UA-130254129-1');
   </script>
-
-
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>TATE CORPORATION テイト・コーポレーション イベント企画・制作・招聘</title>
-  <meta name="description" content="イージーリスニング、ゴスペルコンサート・海外のダンス・バレエ・演劇・ミュージカル等のプロデュース、企画、招聘。テイトコーポレーションの公式ホームページはこちら。" />
+  <title>お問い合わせ | TATE CORPORATION テイト・コーポレーション</title>
+  <meta name="description" content="テイト・コーポレーションへのお問い合わせ" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
   <link rel="stylesheet" href="../css2019.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Noto+Serif+JP:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    .ct-page { font-family: 'Noto Serif JP', 'Yu Mincho', serif; color: #2c2c2c; }
+    .ct-hero { background: #1a1a2e; color: #fff; text-align: center; padding: 60px 30px; }
+    .ct-hero-label { font-size: 0.85em; letter-spacing: 0.3em; color: #c9a8d8; margin-bottom: 15px; }
+    .ct-hero-title { font-family: 'Cormorant Garamond', serif; font-size: 2.4em; font-weight: 300; letter-spacing: 0.15em; }
+    .ct-hero-sub { font-size: 1em; color: #e0d0e8; margin-top: 10px; letter-spacing: 0.1em; }
+    .ct-section { max-width: 700px; margin: 0 auto; padding: 50px 30px; }
+    .ct-divider { width: 60px; height: 1px; background: #c9a8d8; margin: 0 auto; }
+
+    .ct-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.06);
+      padding: 40px;
+      margin-bottom: 30px;
+    }
+    .ct-card-label {
+      font-size: 0.8em;
+      letter-spacing: 0.2em;
+      color: #9b6bb0;
+      margin-bottom: 15px;
+    }
+    .ct-card-title {
+      font-size: 1.15em;
+      font-weight: 500;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .ct-card-icon {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      background: #5b3a6b;
+      border-radius: 50%;
+      line-height: 50px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .ct-card-icon span {
+      color: #fff;
+      font-size: 1.3em;
+    }
+    .ct-tel {
+      font-size: 1.8em;
+      font-weight: 700;
+      color: #333;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+    }
+    .ct-hours {
+      font-size: 0.9em;
+      color: #888;
+    }
+    .ct-note {
+      font-size: 0.9em;
+      line-height: 1.8;
+      color: #666;
+      margin-top: 15px;
+    }
+    .ct-link-btn {
+      display: inline-block;
+      background: #9b6bb0;
+      color: #fff;
+      padding: 12px 35px;
+      font-size: 1em;
+      font-family: 'Noto Serif JP', serif;
+      text-decoration: none;
+      border-radius: 6px;
+      letter-spacing: 0.1em;
+      transition: background 0.3s;
+    }
+    .ct-link-btn:hover { background: #7b4f90; }
+
+    .ct-back {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .ct-back a {
+      font-size: 0.95em;
+      color: #9b6bb0;
+      text-decoration: none;
+      letter-spacing: 0.08em;
+      border-bottom: 1px solid #c9a8d8;
+      padding-bottom: 4px;
+      transition: color 0.3s;
+    }
+    .ct-back a:hover { color: #5b3a6b; }
+
+    @media screen and (max-width: 768px) {
+      .headerImages { flex-direction: row; align-items: center; justify-content: flex-start; padding: 0 10px; gap: 8px; }
+      .headerImages img { max-width: 100%; height: auto; }
+      .headerImages img:not(.logo) { display: none; }
+      .headtertop { flex-wrap: wrap; }
+      .headtertop li { margin: 0 8px; }
+      .headtertop li a { height: 40px; font-size: 0.85em; padding: 0 5px; }
+      .ct-hero { padding: 35px 15px; }
+      .ct-hero-title { font-size: 1.8em; }
+      .ct-section { padding: 30px 15px; }
+      .ct-card { padding: 25px 20px; }
+      .ct-tel { font-size: 1.4em; }
+      .ct-card-title { font-size: 1.05em; }
+      .ct-link-btn { padding: 10px 25px; font-size: 0.9em; }
+      footer .company { flex-wrap: wrap; justify-content: center; gap: 5px; }
+      footer .company li { margin-left: 10px; font-size: 0.85em; }
+      .linkbanner.right { flex-wrap: wrap; justify-content: center; gap: 10px; }
+      .linkbanner.right img { width: 100px; }
+    }
+  </style>
 </head>
 
 <body>
-  <header><!--全ぺージ共通ヘッダー-->
+  <header>
     <div class="headerImages">
       <a href="../index.html">
         <img class="logo" src="../headernavi/logo2.png" alt="テイト・コーポレーション">
@@ -33,94 +138,63 @@
     <ul class="headtertop">
       <li style="text-align: center;"><a href="../index.html">ホーム</a></li>
       <li style="text-align: center;"><a href="../news/news-list.html">お知らせ</a></li>
-      <li style="text-align: center;"><a
-          href="../ticket.html">チケット</a>
-      </li>
+      <li style="text-align: center;"><a href="../ticket.html">チケット</a></li>
       <li style="text-align: center;"><a href="../company tate/producer2019.html">会社概要</a></li>
       <li style="text-align: center;"><a href="../kontact/contact2019.html">お問い合わせ</a></li>
     </ul>
   </header>
 
-  <main><!--ヘッダーの中にメイン-->
-    <h2>
-      <a>Contact　お問い合わせ</a>
-    </h2>
-    <!-- <p style="margin-bottom: 10px">
-      ・チケットのお問い合わせは
-    </p>
-    <h3>
-      <a>
-        テイト・チケットセンター 03-6774-1968 (全日10:00～19:00)<br>
-      </a>
-    </h3> -->
-    <p style="margin-bottom: 10px; margin-top: 30px;">
-      ・お問い合わせ
-    </p>
-    <h3 style="margin-bottom: 50px;">
-      <a>
-        テイト・コーポレーション 03-3402-9977 (平日)<br>
-      </a>
-    </h3>
-    <p style="margin-bottom: 10px; margin-top: 30px;">
-      ・ゴスペル公演についてお問い合わせは
-    </p>
-    <h3 style="margin-bottom: 50px;">
-      ゴスペルオフィシャルサイト：https://www.min-on.jp/special/2025/gospel
-    </h3>
-    <p style="margin-bottom: 10px; margin-top: 30px;">
-    </p>
-    <!-- <form  method="post" action="mail.php" class="contactform">
-      <table class="contacttable">
-          <tr>
-            <th>ご用件 / Title</th>
-            <td><select name="ご用件" required>
-                <option value="">選択してください</option>
-                <option value="ご質問・お問い合わせ">ご質問・お問い合わせ</option>
-                <option value="リンクについて">リンクについて</option>
-              </select></td>
-          </tr>
-          <tr>
-            <th>お名前 / Name</th>
-            <td><input type="text" name="お名前" required> ※必須</td>
-          </tr>
-          <tr>
-            <th>電話番号（半角） / Tel</th>
-            <td><input type="tel" name="電話番号"></td>
-          </tr>
-          <tr>
-            <th>メールアドレス（半角） / E-mail Address</th>
-            <td><input type="email" name="Email" required> ※必須<a class="redunderlinefont">※携帯メールは返信できませんのでご了承下さい。</a></td>
-          </tr>
-          <tr>
-            <th>年齢 / Age</th>
-            <td><label for="age"></label>
-              <input type="number" name="age"  id="age"></td>
-          </tr>
-          <tr>
-            <th>郵便番号 / Postcode</th>
-            <td><label for="postcode"></label>
-              <input type="number" name="postcode"  id="postcode"></td>
-          </tr>
-          <tr>
-            <th>住所 / Address<br /></th>
-            <td><label for="address"></label>
-              <input type="text" name="address"  id="address" value="" ></td>
-          </tr>
-          <tr>
-            <th colspan="2"><input type="checkbox" name="check" id="check">
-              <label for="check">当社からの公演案内などの送付を希望する。 　Japanese Customer Only</label></th>
-          </tr>
-          <tr>
-            <th>お問い合わせ内容 / Message</th>
-            <td><textarea name="お問い合わせ内容" cols="50" rows="5" required></textarea></td>
-          </tr>
-        </table>
-        <input type="submit" value="確認">
-  </form>
-    <div class="IPaddress"><p>※IPアドレスを記録しております。いたずらや嫌がらせ等はご遠慮ください</p></div>
-  -->
-  </main>
-  <!--footer-->
+  <div class="ct-page">
+    <div class="ct-hero">
+      <div class="ct-hero-label">TATE CORPORATION</div>
+      <div class="ct-hero-title">Contact</div>
+      <div class="ct-hero-sub">お問い合わせ</div>
+    </div>
+
+    <div style="background: #f9f5fb; padding: 1px 0;">
+      <div class="ct-section">
+
+        <!-- お問い合わせ -->
+        <div class="ct-card" style="text-align: center;">
+          <div class="ct-card-icon"><span>&#9742;</span></div>
+          <div class="ct-card-label">GENERAL INQUIRY</div>
+          <div class="ct-card-title">テイト・コーポレーション</div>
+          <div class="ct-tel">03-3402-9977</div>
+          <div class="ct-hours">平日 受付</div>
+          <div class="ct-note">
+            〒150-0001 東京都渋谷区神宮前3-2-14
+          </div>
+        </div>
+
+        <!-- チケットセンター -->
+        <div class="ct-card" style="text-align: center;">
+          <div class="ct-card-icon"><span>&#9834;</span></div>
+          <div class="ct-card-label">TICKET CENTER</div>
+          <div class="ct-card-title">テイト・チケットセンター</div>
+          <div class="ct-tel">03-6774-1968</div>
+          <div class="ct-hours">10:00～19:00（土日祝日も受付）</div>
+          <div style="margin-top: 20px;">
+            <a href="https://maichike.com/" target="_blank" class="ct-link-btn">マイチケ →</a>
+          </div>
+        </div>
+
+        <!-- ゴスペル -->
+        <div class="ct-card" style="text-align: center;">
+          <div class="ct-card-icon"><span>&#9836;</span></div>
+          <div class="ct-card-label">GOSPEL CONCERT</div>
+          <div class="ct-card-title">ゴスペル公演についてのお問い合わせ</div>
+          <div style="margin-top: 15px;">
+            <a href="https://www.min-on.jp/special/2025/gospel" target="_blank" class="ct-link-btn">ゴスペルオフィシャルサイト →</a>
+          </div>
+        </div>
+
+        <div class="ct-back">
+          <a href="../index.html">← トップページに戻る</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer>
     <ul class="company">
       <li><a href="../sitemapetc/privacypolicy2019.html">プライバシーポリシー</a></li>
@@ -129,27 +203,11 @@
       <li><a href="../company tate/producer2019.html">会社概要</a></li>
     </ul>
     <ul class="linkbanner right">
-      <li>
-        <a class="wedu2">
-          <a href="../company tate/wedu2019.html">
-            <img src="../index/wedu-button.jpg" alt="wedu" /></a>
-      </li>
-      <li>
-        <a class="facebook">
-          <a href="https://www.facebook.com/profile.php?id=61552790174402">
-            <img src="../index/facebook.jpg" alt="facebook" /></a>
-      </li>
-      <li>
-        <a class="twitter">
-          <a href="https://x.com/tetsuyakita0521
-">
-            <img src="../index/twitter.jpg" alt="twitter" /></a>
-      </li>
+      <li><a href="../company tate/wedu2019.html"><img src="../index/wedu-button.jpg" alt="wedu" /></a></li>
+      <li><a href="https://www.facebook.com/profile.php?id=61552790174402"><img src="../index/facebook.jpg" alt="facebook" /></a></li>
+      <li><a href="https://x.com/tetsuyakita0521"><img src="../index/twitter.jpg" alt="twitter" /></a></li>
     </ul>
   </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
-  <script src="script2019.js" defer></script>
 </body>
 
 </html>
