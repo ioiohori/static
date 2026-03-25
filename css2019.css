@@ -730,6 +730,10 @@ body {
     padding: 5px 0;
   }
 
+  .headtertop li:first-child {
+    display: none;
+  }
+
   .headtertop li {
     margin: 0 8px;
   }
