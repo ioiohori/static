@@ -41,7 +41,7 @@ header {
 }
 
 .headerImages img:not(.logo) {
-  height: 22px;
+  height: 36px;
   width: auto;
   opacity: 0.7;
 }
