@@ -94,19 +94,12 @@
       100% { transform: scale(1.05) translate(-0.5%, -1%); }
     }
 
-    .swiper-pagination {
-      display: none;
-    }
-
     .swiper-button-next,
     .swiper-button-prev {
       color: #fff;
       text-shadow: 0 2px 6px rgba(0,0,0,0.5);
     }
 
-    .swiper-pagination-bullet-active {
-      background: #9b6bb0;
-    }
 
     .swiper-overlay {
       position: absolute;
@@ -495,10 +488,6 @@
       slidesPerView: 1,
       spaceBetween: 10,
       loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
       autoplay: {
         delay: 4000,
         disableOnInteraction: false,
