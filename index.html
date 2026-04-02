@@ -59,12 +59,15 @@
       flex: 0 0 100%;
       width: 100%;
       overflow: hidden;
+      height: 600px;
     }
 
     .swiper-slide img {
       width: 100%;
-      height: auto;
+      height: 100%;
       display: block;
+      object-fit: contain;
+      object-position: center center;
       animation: kenburns1 8s ease-in-out infinite alternate;
     }
 
@@ -277,6 +280,7 @@
     /* レスポンシブ対応 */
     @media screen and (max-width: 768px) {
       body { font-size: 15px; }
+      .swiper-slide { height: 350px; }
       .headerImages { flex-direction: row; align-items: center; justify-content: flex-start; padding: 0 10px; gap: 8px; }
       .headerImages img { max-width: 100%; height: auto; } .headerImages img:not(.logo) { display: none; }
       .headtertop { flex-wrap: wrap; }
