@@ -117,6 +117,50 @@
       background: #9b6bb0;
     }
 
+    .swiper-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10;
+      pointer-events: none;
+      display: flex;
+      align-items: flex-end;
+      padding: 40px;
+      background: linear-gradient(transparent 40%, rgba(26,26,46,0.8));
+    }
+    .swiper-overlay a {
+      pointer-events: auto;
+      text-decoration: none;
+      color: #fff;
+    }
+    .swiper-overlay-label {
+      font-size: 0.75em;
+      letter-spacing: 0.3em;
+      color: #c9a8d8;
+      margin-bottom: 8px;
+    }
+    .swiper-overlay-title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 2em;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+      margin-bottom: 6px;
+    }
+    .swiper-overlay-sub {
+      font-size: 1em;
+      letter-spacing: 0.1em;
+      color: #e0d0e8;
+      margin-bottom: 8px;
+    }
+    .swiper-overlay-dates {
+      font-size: 0.85em;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.7;
+    }
+
     .news-section {
       flex: 1;
     }
@@ -281,6 +325,10 @@
     @media screen and (max-width: 768px) {
       body { font-size: 15px; }
       .swiper-slide { height: 350px; }
+      .swiper-overlay { padding: 20px; }
+      .swiper-overlay-title { font-size: 1.3em; }
+      .swiper-overlay-sub { font-size: 0.85em; }
+      .swiper-overlay-dates { font-size: 0.75em; }
       .headerImages { flex-direction: row; align-items: center; justify-content: flex-start; padding: 0 10px; gap: 8px; }
       .headerImages img { max-width: 100%; height: auto; } .headerImages img:not(.logo) { display: none; }
       .headtertop { flex-wrap: wrap; }
@@ -331,23 +379,28 @@
     </ul>
   </header>
 
-  <div class="swiper-container">
+  <div class="swiper-container" style="position: relative;">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <a href="concert2020/garancha2026.html">
-          <img src="index/garancha_carmen1.jpg" alt="エリーナ・ガランチャ カルメン" width="100%">
-        </a>
+        <img src="index/garancha_carmen1.jpg" alt="エリーナ・ガランチャ カルメン" width="100%">
       </div>
       <div class="swiper-slide">
-        <a href="concert2020/garancha2026.html">
-          <img src="index/garancha_carmen2.jpg" alt="エリーナ・ガランチャ カルメン" width="100%">
-        </a>
+        <img src="index/garancha_carmen2.jpg" alt="エリーナ・ガランチャ カルメン" width="100%">
       </div>
       <div class="swiper-slide">
-        <a href="concert2020/garancha2026.html">
-          <img src="index/garancha_carmen3.jpg" alt="エリーナ・ガランチャ カルメン" width="100%">
-        </a>
+        <img src="index/garancha_carmen3.jpg" alt="エリーナ・ガランチャ カルメン" width="100%">
       </div>
+    </div>
+    <div class="swiper-overlay">
+      <a href="concert2020/garancha2026.html">
+        <div class="swiper-overlay-label">TATE CORPORATION PRESENTS</div>
+        <div class="swiper-overlay-title">エリーナ・ガランチャ</div>
+        <div class="swiper-overlay-sub">メゾソプラノ リサイタル 2026</div>
+        <div class="swiper-overlay-dates">
+          11/1(日) すみだトリフォニーホール<br>
+          11/3(祝) サントリーホール 大ホール
+        </div>
+      </a>
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
