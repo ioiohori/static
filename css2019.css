@@ -35,25 +35,33 @@ main {
   display: flex;
   margin: 0 auto;
   justify-content: center;
-  background-color: #333333;
-  /* padding: 0 20px; */
-  /* max-width: 1200px; */
+  background: #1a1a2e;
+  padding: 0;
+  border-bottom: 1px solid rgba(201,168,216,0.2);
 }
 
 .headtertop li {
-  margin: 0 20px;
+  margin: 0;
 }
 
 .headtertop li a {
   height: 50px;
-
-  color: #fff;
+  color: rgba(255,255,255,0.7);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  transition: 0.3s;
-  padding: 0 10px;
+  transition: all 0.3s;
+  padding: 0 24px;
+  font-size: 0.9em;
+  letter-spacing: 0.08em;
+  border-bottom: 2px solid transparent;
+}
+
+.headtertop li a:hover {
+  color: #fff;
+  border-bottom-color: #9b6bb0;
+  background: rgba(155,107,176,0.1);
 }
 
 /* HPの幅が950～1000だからMAXWIDTHを950に設定する。その後に、余った余白（マージン）を左右多少に分ける。 */
@@ -727,7 +735,8 @@ body {
 
   .headtertop {
     flex-wrap: wrap;
-    padding: 5px 0;
+    padding: 0;
+    justify-content: center;
   }
 
   .headtertop li:first-child {
@@ -735,13 +744,14 @@ body {
   }
 
   .headtertop li {
-    margin: 0 8px;
+    margin: 0;
   }
 
   .headtertop li a {
-    height: 38px;
-    font-size: 0.82em;
-    padding: 0 5px;
+    height: 42px;
+    font-size: 0.8em;
+    padding: 0 12px;
+    letter-spacing: 0.05em;
   }
 
   .news-date,
