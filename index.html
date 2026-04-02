@@ -76,7 +76,12 @@
 
     .swiper-button-next,
     .swiper-button-prev {
-      color: #000;
+      color: #fff;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #9b6bb0;
     }
 
     .news-section {
@@ -296,10 +301,17 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <a href="concert2020/garancha2026.html">
-          <img src="index/garancha_banner.jpg" alt="エリーナ・ガランチャ メゾソプラノ リサイタル2026" width="100%">
+          <img src="index/garancha_flyer_front.jpg" alt="エリーナ・ガランチャ メゾソプラノ リサイタル2026 チラシ表" width="100%">
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="concert2020/garancha2026.html">
+          <img src="index/garancha_flyer_back.jpg" alt="エリーナ・ガランチャ メゾソプラノ リサイタル2026 チラシ裏" width="100%">
         </a>
       </div>
     </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </div>
   <div class="swiper-pagination"></div>
   <main><!--ヘッダーの中にメイン-->
