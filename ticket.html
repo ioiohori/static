@@ -17,131 +17,75 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="css2019.css">
   <link rel="icon" type="image/x-icon" href="headernavi/favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Noto+Serif+JP:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    .ticket-page {
-      font-family: 'Noto Serif JP', serif;
-      min-height: 60vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 60px 20px;
-      background: linear-gradient(135deg, #f8f4fb 0%, #eee8f3 100%);
-    }
-    .ticket-card {
+    .tk-page { font-family: 'Noto Serif JP', 'Yu Mincho', serif; color: #2c2c2c; }
+    .tk-hero { background: #1a1a2e; color: #fff; text-align: center; padding: 60px 30px; }
+    .tk-hero-label { font-size: 0.85em; letter-spacing: 0.3em; color: #c9a8d8; margin-bottom: 15px; }
+    .tk-hero-title { font-family: 'Cormorant Garamond', serif; font-size: 2.4em; font-weight: 300; letter-spacing: 0.15em; }
+    .tk-hero-sub { font-size: 1em; color: #e0d0e8; margin-top: 10px; letter-spacing: 0.1em; }
+    .tk-section { max-width: 700px; margin: 0 auto; padding: 50px 30px; }
+    .tk-card {
       background: #fff;
       border-radius: 12px;
-      box-shadow: 0 8px 40px rgba(0,0,0,0.08);
-      max-width: 600px;
-      width: 100%;
-      padding: 50px 40px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.06);
+      padding: 40px;
+      margin-bottom: 30px;
       text-align: center;
     }
-    .ticket-card-label {
-      font-size: 0.85em;
-      letter-spacing: 0.3em;
-      color: #9b6bb0;
-      margin-bottom: 20px;
-    }
-    .ticket-card h3 {
-      font-size: 1.5em;
-      font-weight: 500;
-      color: #333;
-      margin-bottom: 35px;
-      letter-spacing: 0.1em;
-    }
-    .ticket-divider {
-      width: 50px;
-      height: 1px;
-      background: #c9a8d8;
-      margin: 0 auto 35px;
-    }
-    .ticket-tel {
-      margin-bottom: 30px;
-    }
-    .ticket-tel-icon {
+    .tk-card-icon {
       display: inline-block;
       width: 50px;
       height: 50px;
       background: #5b3a6b;
       border-radius: 50%;
       line-height: 50px;
+      text-align: center;
       margin-bottom: 15px;
     }
-    .ticket-tel-icon img {
-      width: 24px;
-      height: 24px;
-      vertical-align: middle;
-      filter: brightness(10);
-    }
-    .ticket-tel-number {
-      font-size: 2em;
-      font-weight: 700;
-      color: #333;
-      letter-spacing: 0.08em;
-      margin-bottom: 8px;
-    }
-    .ticket-tel-hours {
-      font-size: 0.9em;
-      color: #888;
-      letter-spacing: 0.05em;
-    }
-    .ticket-web {
-      margin-top: 30px;
-      padding-top: 30px;
-      border-top: 1px solid #ece3f0;
-    }
-    .ticket-web-icon {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      background: #9b6bb0;
-      border-radius: 50%;
-      line-height: 50px;
-      margin-bottom: 15px;
-    }
-    .ticket-web-icon img {
-      width: 24px;
-      height: 24px;
-      vertical-align: middle;
-      filter: brightness(10);
-    }
-    .ticket-web-label {
-      font-size: 0.9em;
-      color: #888;
-      letter-spacing: 0.1em;
-      margin-bottom: 12px;
-    }
-    .ticket-web-btn {
+    .tk-card-icon span { color: #fff; font-size: 1.3em; }
+    .tk-card-label { font-size: 0.8em; letter-spacing: 0.2em; color: #9b6bb0; margin-bottom: 15px; }
+    .tk-card-title { font-size: 1.15em; font-weight: 500; color: #333; margin-bottom: 20px; }
+    .tk-tel { font-size: 1.8em; font-weight: 700; color: #333; letter-spacing: 0.05em; margin-bottom: 6px; }
+    .tk-hours { font-size: 0.9em; color: #888; }
+    .tk-link-btn {
       display: inline-block;
       background: #9b6bb0;
       color: #fff;
-      padding: 14px 50px;
-      font-size: 1.1em;
+      padding: 12px 35px;
+      font-size: 1em;
       font-family: 'Noto Serif JP', serif;
-      letter-spacing: 0.15em;
       text-decoration: none;
       border-radius: 6px;
+      letter-spacing: 0.1em;
       transition: background 0.3s;
     }
-    .ticket-web-btn:hover {
-      background: #7b4f90;
+    .tk-link-btn:hover { background: #7b4f90; }
+    .tk-back { text-align: center; padding-bottom: 20px; }
+    .tk-back a {
+      font-size: 0.95em;
+      color: #9b6bb0;
+      text-decoration: none;
+      letter-spacing: 0.08em;
+      border-bottom: 1px solid #c9a8d8;
+      padding-bottom: 4px;
+      transition: color 0.3s;
     }
+    .tk-back a:hover { color: #5b3a6b; }
 
-    /* レスポンシブ対応 */
     @media screen and (max-width: 768px) {
       .headerImages { flex-direction: row; align-items: center; justify-content: flex-start; padding: 0 10px; gap: 8px; }
-      .headerImages img { max-width: 100%; height: auto; } .headerImages img:not(.logo) { display: none; }
+      .headerImages img { max-width: 100%; height: auto; }
+      .headerImages img:not(.logo) { display: none; }
       .headtertop { flex-wrap: wrap; }
       .headtertop li:first-child { display: none; } .headtertop li { margin: 0 8px; }
       .headtertop li a { height: 40px; font-size: 0.85em; padding: 0 5px; }
-      .ticket-page { padding: 30px 15px; }
-      .ticket-card { padding: 30px 20px; }
-      .ticket-card-label { font-size: 0.8em; }
-      .ticket-card h3 { font-size: 1.2em; }
-      .ticket-tel-number { font-size: 1.5em; }
-      .ticket-tel-hours { font-size: 0.85em; }
-      .ticket-web-btn { padding: 12px 30px; font-size: 1em; }
+      .tk-hero { padding: 35px 15px; }
+      .tk-hero-title { font-size: 1.8em; }
+      .tk-section { padding: 30px 15px; }
+      .tk-card { padding: 25px 20px; }
+      .tk-tel { font-size: 1.4em; }
+      .tk-link-btn { padding: 10px 25px; font-size: 0.9em; }
       footer .company { flex-wrap: wrap; justify-content: center; gap: 5px; }
       footer .company li { margin-left: 10px; font-size: 0.85em; }
       .linkbanner.right { flex-wrap: wrap; justify-content: center; gap: 10px; }
@@ -167,28 +111,30 @@
     </ul>
   </header>
 
-  <div class="ticket-page">
-    <div class="ticket-card">
-      <div class="ticket-card-label">TATE TICKET CENTER</div>
-      <h3>チケットのお申込み</h3>
-      <div class="ticket-divider"></div>
+  <div class="tk-page">
+    <div class="tk-hero">
+      <div class="tk-hero-label">TATE CORPORATION</div>
+      <div class="tk-hero-title">Ticket</div>
+      <div class="tk-hero-sub">チケットのお申込み</div>
+    </div>
 
-      <div class="ticket-tel">
-        <div class="ticket-tel-icon">
-          <img src="index/tel.png" alt="電話">
-        </div>
-        <div class="ticket-tel-number">03-6774-1968</div>
-        <div class="ticket-tel-hours">10:00～19:00（土日祝日も受付）</div>
-      </div>
+    <div style="background: #f9f5fb; padding: 1px 0;">
+      <div class="tk-section">
 
-      <div class="ticket-web">
-        <div class="ticket-web-icon">
-          <img src="index/internet.png" alt="Web">
+        <div class="tk-card">
+          <div class="tk-card-icon"><span>&#9742;</span></div>
+          <div class="tk-card-label">TICKET CENTER</div>
+          <div class="tk-card-title">テイト・チケットセンター</div>
+          <div class="tk-tel">03-6774-1968</div>
+          <div class="tk-hours">10:00～19:00（土日祝日も受付）</div>
+          <div style="margin-top: 20px;">
+            <a href="https://maichike.com/" target="_blank" class="tk-link-btn">マイチケ →</a>
+          </div>
         </div>
-        <div class="ticket-web-label">オンラインでのお申込み</div>
-        <a href="https://maichike.com/" target="_blank" class="ticket-web-btn">
-          マイチケ →
-        </a>
+
+        <div class="tk-back">
+          <a href="index.html">← トップページに戻る</a>
+        </div>
       </div>
     </div>
   </div>
@@ -201,21 +147,9 @@
       <li><a href="company tate/producer2019.html">会社概要</a></li>
     </ul>
     <ul class="linkbanner right">
-      <li>
-        <a class="wedu2">
-          <a href="company tate/wedu2019.html">
-            <img src="index/wedu-button.jpg" alt="wedu" /></a>
-      </li>
-      <li>
-        <a class="facebook">
-          <a href="https://www.facebook.com/profile.php?id=61552790174402">
-            <img src="index/facebook.jpg" alt="facebook" /></a>
-      </li>
-      <li>
-        <a class="twitter">
-          <a href="https://x.com/tetsuyakita0521">
-            <img src="index/twitter.jpg" alt="twitter" /></a>
-      </li>
+      <li><a href="company tate/wedu2019.html"><img src="index/wedu-button.jpg" alt="wedu" /></a></li>
+      <li><a href="https://www.facebook.com/profile.php?id=61552790174402"><img src="index/facebook.jpg" alt="facebook" /></a></li>
+      <li><a href="https://x.com/tetsuyakita0521"><img src="index/twitter.jpg" alt="twitter" /></a></li>
     </ul>
   </footer>
 </body>
