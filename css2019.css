@@ -36,12 +36,12 @@ header {
 }
 
 .headerImages .logo {
-  height: 42px;
+  height: 34px;
   width: auto;
 }
 
 .headerImages img:not(.logo) {
-  height: 36px;
+  height: 28px;
   width: auto;
   opacity: 0.7;
 }
