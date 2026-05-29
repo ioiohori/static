@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <meta name="description" content="エリーナ・ガランチャ　メゾソプラノ　リサイタル2026">
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130254129-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -14,340 +14,339 @@
   </script>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>TATE CORPORATION テイト・コーポレーション イベント企画・制作・招聘</title>
-  <meta name="description" content="ゴスペル、海外のダンス・バレエ、演劇、ミュージカル、ガランチャ 公演のプロデュース、企画、招聘。テイトコーポレーションの公式ホームページはこちら。" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="css2019.css">
   <link rel="icon" type="image/x-icon" href="headernavi/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="css2019.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Serif+JP:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    /* Add the CSS here */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      overflow-x: hidden;
+    .gc-page {
+      font-family: 'Noto Serif JP', 'Yu Mincho', serif;
+      color: #2c2c2c;
     }
 
-    main {
+    /* ヒーロー */
+    .gc-hero {
       width: 100%;
-      overflow-x: hidden;
-    }
-
-    .swiper-container {
-      width: 100vw;
-      height: 100%;
       overflow: hidden;
-      margin-left: calc(-50vw + 50%);
-      margin-right: calc(-50vw + 50%);
-      position: relative;
-      left: 50%;
-      right: 50%;
-      transform: translateX(-50%);
+      background: #1a1a2e;
     }
-
-    .swiper-wrapper {
-      display: flex;
-      transition: transform 0.3s ease-in-out;
-      width: 100%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      flex: 0 0 100%;
-      width: 100%;
-    }
-
-    .swiper-slide img {
+    .gc-hero img {
       width: 100%;
       height: auto;
       display: block;
-      object-fit: cover;
     }
-
-    .swiper-pagination {
-      position: relative;
-      bottom: 0;
-      margin-top: 30px;
-      text-align: center;
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-      color: #000;
-    }
-
-    .news-section {
-      flex: 1;
-    }
-
-    .news-list {
-      margin-top: 20px;
-      width: 100%;
-    }
-
-    .news-item {
-      display: flex;
-      align-items: center;
-      padding: 15px 0;
-      border-bottom: 1px solid #eee;
-    }
-
-    .news-date {
-      color: #666;
-      margin-right: 20px;
-      min-width: 100px;
-    }
-
-    .news-title {
-      color: #333;
-    }
-
-    .social-feeds {
-      margin-top: 20px;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .twitter-feed,
-    .facebook-feed {
-      margin-bottom: 30px;
-      width: auto;
-    }
-
-    h3 {
-      margin-bottom: 15px;
-      color: #333;
-    }
-
-    /* ガランチャ2026 コンサート情報 */
-    .gc26-hero img {
-      width: 100% !important;
-      height: auto !important;
-      display: block;
-    }
-    .gc26-detail {
+    .gc-hero-text {
       background: #1a1a2e;
-      color: #fff;
+      text-align: center;
       padding: 40px 30px;
-    }
-    .gc26-detail-inner {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    .gc26-label {
-      font-size: 0.9em;
-      letter-spacing: 0.3em;
-      color: #c9a8d8;
-      margin-bottom: 10px;
-    }
-    .gc26-detail h3 {
-      font-size: 1.8em;
-      font-weight: bold;
-      letter-spacing: 0.1em;
-      margin-bottom: 5px;
-      color: #fff !important;
-      padding: 0;
-      line-height: 1.4;
-    }
-    .gc26-subtitle {
-      font-size: 1.2em;
-      letter-spacing: 0.08em;
-      color: #e0d0e8;
-      margin-bottom: 25px;
-    }
-    .gc26-columns {
-      display: flex;
-      gap: 30px;
-      flex-wrap: wrap;
-      margin-bottom: 25px;
-    }
-    .gc26-dates {
-      flex: 1;
-      min-width: 250px;
-    }
-    .gc26-date-item {
-      border-left: 3px solid #9b6bb0;
-      padding-left: 15px;
-      margin-bottom: 15px;
-    }
-    .gc26-date-item .day {
-      font-size: 1.1em;
-      font-weight: bold;
-    }
-    .gc26-date-item .time {
-      font-size: 0.9em;
-      color: #ccc;
-    }
-    .gc26-date-item .venue {
-      font-size: 0.95em;
-      color: #e0d0e8;
-    }
-    .gc26-credits {
-      flex: 1;
-      min-width: 250px;
-      font-size: 0.95em;
-      line-height: 2;
-      color: #ddd;
-    }
-    .gc26-desc {
-      font-size: 0.9em;
-      line-height: 1.8;
-      color: #bbb;
-      margin-bottom: 25px;
-    }
-    .gc26-gallery {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 30px;
-    }
-    .gc26-gallery img {
-      width: 100% !important;
-      height: 200px !important;
-      object-fit: cover;
-      border-radius: 4px;
-    }
-    .gc26-btn {
-      display: inline-block;
-      background: #9b6bb0;
-      color: #fff !important;
-      padding: 14px 50px;
-      font-size: 1em;
-      letter-spacing: 0.15em;
-      text-decoration: none;
-      border-radius: 4px;
-    }
-    .gc26-btn:hover {
-      background: #7b4f90;
-    }
-
-    /* ミート＆グリート */
-    .mg-banner {
-      margin-top: 50px;
-      margin-bottom: 30px;
-    }
-    .mg-banner a {
-      text-decoration: none;
-      color: inherit;
-    }
-    .mg-banner-inner {
-      display: flex;
-      gap: 0;
-      overflow: hidden;
-      border-radius: 8px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.15);
-    }
-    .mg-banner-img {
-      flex: 1;
-      min-height: 450px;
-    }
-    .mg-banner-img img {
-      width: 100% !important;
-      height: 100% !important;
-      object-fit: cover;
-      display: block;
-    }
-    .mg-banner-info {
-      flex: 1;
-      background: linear-gradient(135deg, #2c1338, #5b3a6b);
       color: #fff;
-      padding: 40px 35px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
     }
-    .mg-banner-info .mg-label {
+    .gc-hero-label {
       font-size: 0.85em;
       letter-spacing: 0.3em;
       color: #c9a8d8;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
-    .mg-banner-info .mg-title {
-      font-size: 2.2em;
-      font-weight: bold;
-      letter-spacing: 0.08em;
-      margin-bottom: 8px;
-      font-family: Georgia, 'Times New Roman', serif;
+    .gc-hero-title {
+      font-family: 'Cormorant Garamond', 'Noto Serif JP', serif;
+      font-size: 2.8em;
+      font-weight: 300;
+      letter-spacing: 0.1em;
+      line-height: 1.3;
     }
-    .mg-banner-info .mg-sub {
+    .gc-hero-sub {
       font-size: 1.1em;
-      letter-spacing: 0.05em;
-      margin-bottom: 25px;
+      font-weight: 300;
+      letter-spacing: 0.15em;
       color: #e0d0e8;
+      margin-top: 10px;
     }
-    .mg-banner-info .mg-divider {
-      width: 40px;
+
+    /* セクション */
+    .gc-section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 50px 30px;
+    }
+    .gc-section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5em;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: #5b3a6b;
+      border-bottom: 1px solid #c9a8d8;
+      padding-bottom: 12px;
+      margin-bottom: 30px;
+    }
+    .gc-divider {
+      width: 60px;
       height: 1px;
       background: #c9a8d8;
-      margin-bottom: 25px;
+      margin: 0 auto;
     }
-    .mg-banner-info .mg-benefits-list {
+
+    /* 公演情報 */
+    .gc-info-dark {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 50px 30px;
+    }
+    .gc-info-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .gc-date-block {
+      border-left: 3px solid #9b6bb0;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      background: rgba(155,107,176,0.08);
+      border-radius: 0 6px 6px 0;
+    }
+    .gc-date-block .day {
+      font-size: 1.2em;
+      font-weight: 500;
+    }
+    .gc-date-block .time {
+      font-size: 0.9em;
+      color: #ccc;
+      margin-top: 4px;
+    }
+    .gc-date-block .venue {
+      font-size: 1em;
+      color: #e0d0e8;
+      margin-top: 4px;
+    }
+    .gc-date-block .org {
+      font-size: 0.85em;
+      color: #999;
+      margin-top: 6px;
+      line-height: 1.6;
+    }
+    .gc-credits {
       font-size: 0.95em;
       line-height: 2;
       color: #ddd;
-      margin-bottom: 25px;
+      margin-top: 30px;
+      padding-top: 25px;
+      border-top: 1px solid rgba(255,255,255,0.1);
     }
-    .mg-banner-info .mg-price {
-      font-size: 1.6em;
-      font-weight: bold;
-      letter-spacing: 0.05em;
-      margin-bottom: 8px;
-      font-family: Georgia, 'Times New Roman', serif;
+    .gc-notes {
+      font-size: 0.85em;
+      color: #999;
+      margin-top: 20px;
+      line-height: 1.8;
     }
-    .mg-banner-info .mg-price span {
-      font-size: 0.45em;
-      font-weight: normal;
-      color: #c9a8d8;
+
+    /* 公演について */
+    .gc-about {
+      font-size: 1.05em;
+      line-height: 2;
+      font-weight: 300;
+      letter-spacing: 0.03em;
     }
-    .mg-banner-info .mg-link-btn {
-      display: inline-block;
-      border: 1px solid #c9a8d8;
-      padding: 10px 30px;
+
+    /* チケット */
+    .gc-ticket-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    .gc-ticket-table th {
+      background: #5b3a6b;
+      color: #fff;
+      padding: 12px 15px;
+      font-size: 0.9em;
+      letter-spacing: 0.08em;
+      font-weight: 500;
+    }
+    .gc-ticket-table td {
+      padding: 15px;
+      border-bottom: 1px solid #ece3f0;
       font-size: 0.95em;
+      line-height: 1.6;
+    }
+    .gc-ticket-table tr:hover td {
+      background: #f9f5fb;
+    }
+    .gc-mg-link {
+      display: inline-block;
+      background: linear-gradient(135deg, #5b3a6b, #9b6bb0);
+      color: #fff;
+      padding: 15px 35px;
+      font-size: 1.05em;
+      font-family: 'Noto Serif JP', serif;
       letter-spacing: 0.1em;
-      color: #e0d0e8;
-      border-radius: 4px;
-      margin-top: 25px;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 20px;
+      transition: opacity 0.3s;
+    }
+    .gc-mg-link:hover {
+      opacity: 0.85;
+    }
+
+    /* 発売スケジュール */
+    .gc-schedule-list {
+      list-style: none;
+      padding: 0;
+    }
+    .gc-schedule-list li {
+      display: flex;
+      padding: 14px 0;
+      border-bottom: 1px solid #ece3f0;
+      font-size: 0.95em;
+      line-height: 1.6;
+    }
+    .gc-schedule-list li:last-child {
+      border-bottom: none;
+    }
+    .gc-schedule-label {
+      min-width: 240px;
+      color: #5b3a6b;
+      font-weight: 500;
+    }
+    .gc-schedule-date {
+      color: #555;
+    }
+
+    /* チケットセンター */
+    .gc-ticket-center {
+      background: #f9f5fb;
+      border-radius: 8px;
+      padding: 30px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .gc-ticket-center-tel {
+      font-size: 1.8em;
+      font-weight: 700;
+      color: #333;
+      letter-spacing: 0.05em;
+      margin: 10px 0;
+    }
+    .gc-ticket-center-hours {
+      font-size: 0.9em;
+      color: #888;
+    }
+    .gc-ticket-center-web {
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid #e0d0e8;
+    }
+    .gc-web-btn {
+      display: inline-block;
+      background: #9b6bb0;
+      color: #fff;
+      padding: 12px 40px;
+      font-size: 1em;
+      text-decoration: none;
+      border-radius: 6px;
+      letter-spacing: 0.1em;
+      transition: background 0.3s;
+    }
+    .gc-web-btn:hover {
+      background: #7b4f90;
+    }
+
+    /* プレイガイド */
+    .gc-pg-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .gc-pg-table th {
+      background: #5b3a6b;
+      color: #fff;
+      padding: 12px 15px;
+      font-size: 0.9em;
+      letter-spacing: 0.08em;
+      font-weight: 500;
+    }
+    .gc-pg-table td {
+      padding: 14px 15px;
+      border-bottom: 1px solid #ece3f0;
+      font-size: 0.9em;
+      line-height: 1.6;
+    }
+    .gc-pg-table a {
+      color: #9b6bb0;
+    }
+
+    /* プロフィール */
+    .gc-profile {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 40px;
+      align-items: flex-start;
+    }
+    .gc-profile-img {
+      width: 200px;
+      min-width: 200px;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+    .gc-profile-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .gc-profile-text {
+      font-size: 0.95em;
+      line-height: 1.8;
+      font-weight: 300;
+      color: #444;
+    }
+    .gc-profile-name {
+      font-size: 1.15em;
+      font-weight: 500;
+      color: #333;
+      margin-bottom: 12px;
+    }
+    .gc-gallery {
+      display: flex;
+      gap: 10px;
+    }
+    .gc-gallery img {
+      width: 100% !important;
+      height: 220px !important;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
     }
 
     /* レスポンシブ対応 */
     @media screen and (max-width: 768px) {
-      body { font-size: 15px; }
       .headerImages { flex-direction: row; align-items: center; justify-content: flex-start; padding: 0 10px; gap: 8px; }
       .headerImages img { max-width: 100%; height: auto; } .headerImages img:not(.logo) { display: none; }
       .headtertop { flex-wrap: wrap; }
-      .headtertop li:first-child { display: none; } .headtertop li { margin: 0 8px; }
-      .headtertop li a { height: 40px; font-size: 0.85em; padding: 0 5px; }
-      main { padding: 0 15px; }
-      main h2 { font-size: 18px; padding-left: 0.6em; border-left-width: 12px; }
-      .news-item { flex-direction: column; gap: 5px; }
-      .news-date { min-width: auto; font-size: 0.9em; }
-      .news-title { font-size: 0.95em; line-height: 1.6; }
-      div[style*="display: flex; justify-content: space-between; gap: 20px;"] {
-        flex-direction: column !important;
-      }
-      .facebook-feed iframe { width: 100% !important; height: auto !important; max-width: 100%; }
-      .social-feeds { flex-direction: column; }
-      .gc26-detail { padding: 25px 15px; }
-      .gc26-detail h3 { font-size: 1.3em; }
-      .gc26-subtitle { font-size: 1em; }
-      .gc26-columns { flex-direction: column; gap: 15px; }
-      .gc26-dates { min-width: auto; }
-      .gc26-credits { min-width: auto; font-size: 0.9em; }
-      .gc26-desc { font-size: 0.85em; }
-      .gc26-gallery { flex-direction: column; }
-      .gc26-gallery img { height: auto !important; }
-      .gc26-btn { padding: 12px 30px; font-size: 0.9em; }
-      .mg-banner { margin-top: 30px; }
-      .mg-banner-inner { flex-direction: column; }
-      .mg-banner-img { min-height: 250px; }
-      .mg-banner-info { padding: 25px 20px; }
-      .mg-banner-info .mg-title { font-size: 1.6em; }
-      .mg-banner-info .mg-sub { font-size: 0.95em; }
-      .mg-banner-info .mg-price { font-size: 1.3em; }
-      .mg-banner-info .mg-benefits-list { font-size: 0.9em; }
+      .headtertop li:first-child { display: none; } .headtertop li { margin: 0; }
+      .headtertop li a { height: 42px; font-size: 0.8em; padding: 0 12px; letter-spacing: 0.05em; }
+      .gc-hero-overlay { padding: 40px 20px 20px; }
+      .gc-hero-title { font-size: 1.8em; }
+      .gc-hero-sub { font-size: 0.95em; }
+      .gc-hero-label { font-size: 0.75em; }
+      .gc-section { padding: 30px 15px; }
+      .gc-section-title { font-size: 1.2em; }
+      .gc-info-dark { padding: 30px 15px; }
+      .gc-date-block { padding: 12px 15px; }
+      .gc-date-block .day { font-size: 1em; }
+      .gc-date-block .org { font-size: 0.8em; }
+      .gc-credits { font-size: 0.9em; line-height: 1.8; }
+      .gc-about { font-size: 0.95em; line-height: 1.8; }
+      .gc-ticket-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      .gc-ticket-table th, .gc-ticket-table td { font-size: 0.85em; padding: 10px; white-space: nowrap; }
+      .gc-mg-link { padding: 12px 25px; font-size: 0.95em; }
+      .gc-schedule-list li { flex-direction: column; gap: 4px; }
+      .gc-schedule-label { min-width: auto; font-size: 0.9em; }
+      .gc-schedule-date { font-size: 0.9em; }
+      .gc-ticket-center-tel { font-size: 1.4em; }
+      .gc-pg-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      .gc-pg-table th, .gc-pg-table td { font-size: 0.85em; padding: 10px; }
+      .gc-profile { flex-direction: column; align-items: center; }
+      .gc-profile-img { width: 160px; min-width: 160px; }
+      .gc-profile-text { font-size: 0.9em; line-height: 1.7; }
+      .gc-gallery { flex-direction: column; }
+      .gc-gallery img { height: auto !important; }
       footer .company { flex-wrap: wrap; justify-content: center; gap: 5px; }
       footer .company li { margin-left: 10px; font-size: 0.85em; }
       .linkbanner.right { flex-wrap: wrap; justify-content: center; gap: 10px; }
@@ -357,12 +356,10 @@
 </head>
 
 <body>
-  <header><!--全ぺージ共通ヘッダー-->
+  <header>
     <div class="headerImages">
-      <a href="index.html">
-        <img class="logo" src="headernavi/logo2.png" alt="テイト・コーポレーション">
-      </a>
-      <img src="index/wedu_03.png" alt="テイト・コーポレーションはWeduを応援しています。">
+      <img class="logo" src="headernavi/logo2_white.png" alt="テイト・コーポレーション">
+      <img src="index/wedu_03_white.png" alt="テイト・コーポレーションはWeduを応援しています。">
     </div>
     <ul class="headtertop">
       <li style="text-align: center;"><a href="index.html">ホーム</a></li>
@@ -373,105 +370,195 @@
     </ul>
   </header>
 
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <a href="concert2020/garancha2026.html">
-          <img src="index/garancha_banner.jpg" alt="エリーナ・ガランチャ メゾソプラノ リサイタル2026" width="100%">
-        </a>
+  <div class="gc-page">
+
+    <!-- ヒーロー -->
+    <div class="gc-hero">
+      <img src="index/garancha_banner.jpg" alt="エリーナ・ガランチャ">
+    </div>
+    <div class="gc-hero-text">
+      <div class="gc-hero-label">TATE CORPORATION PRESENTS</div>
+      <div class="gc-hero-title">Elina Garanča</div>
+      <div class="gc-hero-sub">メゾソプラノ　リサイタル 2026</div>
+    </div>
+
+    <!-- 公演情報 -->
+    <div class="gc-info-dark">
+      <div class="gc-info-inner">
+        <div class="gc-date-block">
+          <div class="day">2026年11月1日(日)</div>
+          <div class="time">開場 12:00 / 開演 13:00</div>
+          <div class="venue">すみだトリフォニーホール　大ホール</div>
+          <div class="org">主催：テイト・コーポレーション / 共催：すみだトリフォニーホール / 後援：駐日ラトビア共和国大使館</div>
+        </div>
+        <div class="gc-date-block">
+          <div class="day">2026年11月3日(火・祝)</div>
+          <div class="time">開場 12:00 / 開演 13:00</div>
+          <div class="venue">サントリーホール 大ホール（開館40周年記念参加公演）</div>
+          <div class="org">主催：テイト・コーポレーション / 協力：サントリーホール / 後援：駐日ラトビア共和国大使館</div>
+        </div>
+        <div class="gc-credits">
+          出演：エリーナ・ガランチャ（メゾソプラノ）<br>
+          指揮：カレル・マーク・チチョン<br>
+          演奏：新日本フィルハーモニー交響楽団<br>
+          企画・制作・招聘：テイト・コーポレーション
+        </div>
+        <div class="gc-notes">
+          ※未就学児入場不可　　※公演時間は約２時間を予定しています
+        </div>
       </div>
     </div>
+
+    <!-- 公演について -->
+    <div class="gc-section">
+      <div class="gc-section-title">About</div>
+      <div class="gc-about">
+        オペラ界のスターの一人として頂点で活躍し続けるエリーナ・ガランチャの偉業を達成できる歌手は、他にはほとんどいないだろう。演じる象徴的な主役は常に称賛されている。<br><br>
+        彼女は、演じるそれぞれの役との深いつながりを築くための、「暖かく力強く、特別な暗さと情熱的な声」、「圧倒的な存在感」、「魅力的なルックス」で完璧なバランスをつくる素晴らしいアーティストである。世界的に有名なオペラハウス（メトロポリタンオペラ、ロイヤルオペラハウス、ウィーン国立歌劇場、バイエルン国立歌劇場）などで、定期的に代表的な演目の主演を演じている。今、最も世界的に注目されているメゾソプラノ歌手である。
+      </div>
+      <!-- カルメン画像ギャラリー -->
+      <div class="gc-gallery" style="margin-top: 30px;">
+        <div style="flex: 2;"><img src="index/garancha_carmen1.jpg" alt="カルメン"></div>
+        <div style="flex: 1;"><img src="index/garancha_carmen2.jpg" alt="カルメン"></div>
+        <div style="flex: 1;"><img src="index/garancha_carmen3.jpg" alt="カルメン"></div>
+      </div>
+    </div>
+
+    <div class="gc-divider"></div>
+
+    <!-- チケット -->
+    <div class="gc-section">
+      <div class="gc-section-title">Ticket</div>
+      <table class="gc-ticket-table">
+        <tr>
+          <th style="width: 20%">日時</th>
+          <th style="width: 40%">会場</th>
+          <th style="width: 40%">料金（全席指定）</th>
+        </tr>
+        <tr>
+          <td>11月1日(日)</td>
+          <td>すみだトリフォニーホール　大ホール</td>
+          <td>SS席 33,000円 / S席 31,000円<br>
+            A席 29,000円 / B席 27,000円<br>
+            C席 25,000円
+          </td>
+        </tr>
+        <tr>
+          <td>11月3日(火・祝)</td>
+          <td>サントリーホール 大ホール</td>
+          <td>SS席 33,000円 / S席 31,000円<br>
+            A席 29,000円 / B席 27,000円<br>
+            C席 25,000円 / P席 23,000円
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="gc-divider"></div>
+
+    <!-- 発売スケジュール -->
+    <div class="gc-section">
+      <div class="gc-section-title">Schedule</div>
+      <ul class="gc-schedule-list">
+        <li><span class="gc-schedule-label">主催者先行発売</span><span class="gc-schedule-date">TEL受付 6月6日(土) 10:00～ / Web受付 6月8日(月) 10:00～</span></li>
+        <li><span class="gc-schedule-label">すみだトリフォニーホール先行発売</span><span class="gc-schedule-date">6月15日(月) 10:00～</span></li>
+        <li><span class="gc-schedule-label">サントリーホール先行発売</span><span class="gc-schedule-date">6月13日(土) 10:00～</span></li>
+        <li><span class="gc-schedule-label">プレイガイド先行発売</span><span class="gc-schedule-date">6月27日(土) 10:00～</span></li>
+        <li><span class="gc-schedule-label">一般発売</span><span class="gc-schedule-date">7月25日(土)</span></li>
+      </ul>
+    </div>
+
+    <div class="gc-divider"></div>
+
+    <!-- チケットセンター -->
+    <div class="gc-section">
+      <div class="gc-section-title">Ticket Center</div>
+      <div class="gc-ticket-center">
+        <div style="font-size: 0.9em; color: #888; letter-spacing: 0.1em;">テイト・チケットセンター</div>
+        <div class="gc-ticket-center-tel">03-6774-1968</div>
+        <div class="gc-ticket-center-hours">10:00～19:00（土日祝日も受付）</div>
+        <div class="gc-ticket-center-web">
+          <a href="https://maichike.com/" target="_blank" class="gc-web-btn">マイチケ →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="gc-divider"></div>
+
+    <!-- プレイガイド -->
+    <div class="gc-section">
+      <div class="gc-section-title">Play Guide</div>
+      <table class="gc-pg-table">
+        <tr>
+          <th style="width: 30%">プレイガイド</th>
+          <th style="width: 70%">お申し込み</th>
+        </tr>
+        <tr>
+          <td>チケットぴあ</td>
+          <td><a href="https://t.pia.jp/" target="_blank">https://t.pia.jp/</a><br>
+            セブンイレブン各店マルチコピー機(直接購入)</td>
+        </tr>
+        <tr>
+          <td>イープラス</td>
+          <td><a href="https://eplus.jp" target="_blank">https://eplus.jp</a><br>
+            ファミリーマート各店マルチコピー機(直接購入)</td>
+        </tr>
+        <tr>
+          <td>ローソンチケット</td>
+          <td><a href="https://l-tike.com/" target="_blank">https://l-tike.com/</a><br>
+            ローソン・ミニストップ各店内Loppi(直接購入)</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="gc-divider"></div>
+
+    <!-- プロフィール -->
+    <div class="gc-section">
+      <div class="gc-section-title">Profile</div>
+
+      <div class="gc-profile">
+        <div class="gc-profile-img">
+          <img src="index/elina_profile.jpg" alt="エリーナ・ガランチャ">
+        </div>
+        <div class="gc-profile-text">
+          <div class="gc-profile-name">エリーナ・ガランチャ（メゾソプラノ）</div>
+          オペラ界のスターの一人として頂点で活躍し続けるエリーナ・ガランチャの偉業を達成できる歌手は、他にはほとんどいないだろう。演じる象徴的な主役は常に称賛されている。
+          彼女は、演じるそれぞれの役との深いつながりを築くための、「暖かく力強く、特別な暗さと情熱的な声」、「圧倒的な存在感」、「魅力的なルックス」で完璧なバランスをつくる素晴らしいアーティストである。世界的に有名なオペラハウス（メトロポリタンオペラ、ロイヤルオペラハウス、ウィーン国立歌劇場、バイエルン国立歌劇場）などで、定期的に代表的な演目の主演を演じている。今、最も世界的に注目されているメゾソプラノ歌手である。
+        </div>
+      </div>
+
+      <div class="gc-profile">
+        <div class="gc-profile-img">
+          <img src="index/karel_profile.jpg" alt="カレル・マーク・チチョン">
+        </div>
+        <div class="gc-profile-text">
+          <div class="gc-profile-name">カレル・マーク・チチョン（指揮）</div>
+          ロンドンで生まれ、ジブラルタル出身。その気質、情熱、音楽的才能で世界中の聴衆を魅了し続けている。音楽に対する貢献が認められ、2012年6月、英国女王エリザベス2世陛下より大英帝国勲章を授与。2016年には、音楽界における功績が認められ、王立音楽アカデミーのフェローに選出される。
+          これまでにグラーツ交響楽団の首席指揮者を務め（2006年～2009年）、2009年からはラトヴィア国立交響楽団の首席指揮者、芸術監督となる。2011年9月からザールブリュッケン・カイザースラウテルン・ドイツ放送フィルハーモニー管弦楽団首席指揮者に就任。オペラ指揮者としても定期的にウィーン国立歌劇場、ベルリン・ドイツ・オペラ、バイエルン州立歌劇場、ローマ歌劇場、ボローニャ市立歌劇場、マドリード・レアル歌劇場で指揮している。
+        </div>
+      </div>
+
+      <div class="gc-profile">
+        <div class="gc-profile-img">
+          <img src="index/shin_nichi.jpg" alt="新日本フィルハーモニー交響楽団">
+        </div>
+        <div class="gc-profile-text">
+          <div class="gc-profile-name">新日本フィルハーモニー交響楽団</div>
+          「一緒に音楽をやろう！」1972年、小澤征爾、山本直純の下、自主運営のオーケストラとして創立。
+          1997年、すみだトリフォニーホールを本拠地とし、日常の練習と公演を行う日本初の本格的フランチャイズを導入。定期演奏会、特別演奏会、楽員プロデュース「室内楽シリーズ」のほか、地元の学校体育館や小中学校の音楽授業、各種施設の訪問など、地域に根ざした演奏活動も精力的に行う。
+          2023年4月より佐渡裕が第５代音楽監督に就任。街・ホール・オーケストラが一体となった音楽活動を行う。
+          <br><br>
+          <span style="font-size: 0.9em; color: #888;">
+            公式ウェブサイト：www.njp.or.jp / 公式X：@newjapanphil
+          </span>
+        </div>
+      </div>
+    </div>
+
   </div>
-  <div class="swiper-pagination"></div>
-  <main><!--ヘッダーの中にメイン-->
-    <h2>お知らせ News</h2>
-    <div style="display: flex; justify-content: space-between; gap: 20px;">
-      <div class="news-list">
-        <div class="news-item">
-          <span class="news-date">2026.03.25</span>
-          <span class="news-title"><a href="concert2020/garancha2026.html">エリーナ・ガランチャ メゾソプラノ リサイタル2026
-              公演情報をアップしました！</a></span>
-        </div>
-        <div style="text-align: right; margin-top: 20px;">
-          <a href="news/news-list.html" style="color: #333; text-decoration: none;">お知らせ一覧へ →</a>
-        </div>
-      </div>
-      <div class="facebook-feed">
-        <iframe
-          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61552790174402&tabs=timeline&width=340&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-          width="350" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-          allowfullscreen="true"
-          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-      </div>
-    </div>
-    <h2><a>コンサート情報　Concert Information</a></h2>
 
-    <!-- コンサート詳細 -->
-    <div class="gc26-detail">
-      <div class="gc26-detail-inner">
-        <div class="gc26-label">TATE CORPORATION PRESENTS</div>
-        <h3>エリーナ・ガランチャ</h3>
-        <div class="gc26-subtitle">メゾソプラノ　リサイタル 2026</div>
-        <div class="gc26-columns">
-          <div class="gc26-dates">
-            <div class="gc26-date-item">
-              <div class="day">11月1日(日)</div>
-              <div class="time">開場12:00 / 開演13:00</div>
-              <div class="venue">すみだトリフォニーホール　大ホール</div>
-            </div>
-            <div class="gc26-date-item">
-              <div class="day">11月3日(火・祝)</div>
-              <div class="time">開場12:00 / 開演13:00</div>
-              <div class="venue">サントリーホール 大ホール</div>
-            </div>
-          </div>
-          <div class="gc26-credits">
-            出演：エリーナ・ガランチャ（メゾソプラノ）<br>
-            指揮：カレル・マーク・チチョン<br>
-            演奏：新日本フィルハーモニー交響楽団<br>
-            企画・制作・招聘：テイト・コーポレーション
-          </div>
-        </div>
-        <p class="gc26-desc">
-          オペラ界の頂点で活躍し続けるエリーナ・ガランチャ。「暖かく力強く、特別な暗さと情熱的な声」、「圧倒的な存在感」で世界的に有名なオペラハウスの舞台に立ち続ける、今最も注目されるメゾソプラノ歌手が再び来日。
-        </p>
-        <div class="gc26-gallery">
-          <div style="flex: 2;"><img src="index/garancha_carmen1.jpg" alt="カルメン"></div>
-          <div style="flex: 1;"><img src="index/garancha_carmen2.jpg" alt="カルメン"></div>
-          <div style="flex: 1;"><img src="index/garancha_carmen3.jpg" alt="カルメン"></div>
-        </div>
-        <div style="text-align: center;">
-          <a href="concert2020/garancha2026.html" class="gc26-btn">公演詳細情報 →</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- ミート＆グリート 特別枠 -->
-    <div class="mg-banner">
-      <a href="concert2020/garancha2026_meetgreet.html">
-        <div class="mg-banner-inner">
-          <div class="mg-banner-img">
-            <img src="index/garancha_purple.jpg" alt="エリーナ・ガランチャ ミート＆グリート">
-          </div>
-          <div class="mg-banner-info">
-            <div class="mg-label">SPECIAL EVENT</div>
-            <div class="mg-title">Meet &amp; Greet</div>
-            <div class="mg-sub">エリーナ・ガランチャ<br>『ミート＆グリート』開催決定</div>
-            <div class="mg-divider"></div>
-            <div class="mg-benefits-list">
-              ■ 写真撮影（お1人様1枚）<br>
-              ■ サイン入りパンフレット<br>
-              ■ 来日記念盤CD<br>
-              ■ イタリア産レモンチェッロ<br>
-              ■ VIPバックステージパス
-            </div>
-            <div class="mg-price">¥100,000 <span>（税込）</span></div>
-            <div><span class="mg-link-btn">詳細はこちら →</span></div>
-          </div>
-        </div>
-      </a>
-    </div>
-  </main>
+  <!--footer-->
   <footer>
     <ul class="company">
       <li><a href="sitemapetc/privacypolicy2019.html">プライバシーポリシー</a></li>
@@ -480,45 +567,16 @@
       <li><a href="company tate/producer2019.html">会社概要</a></li>
     </ul>
     <ul class="linkbanner right">
-      <li>
         <a class="wedu2">
           <a href="company tate/wedu2019.html">
             <img src="index/wedu-button.jpg" alt="wedu" /></a>
       </li>
-      <li>
         <a class="facebook">
           <a href="https://www.facebook.com/profile.php?id=61552790174402">
             <img src="index/facebook.jpg" alt="facebook" /></a>
       </li>
-      <li>
-        <a class="twitter">
-          <a href="https://x.com/tetsuyakita0521
-">
-            <img src="index/twitter.jpg" alt="twitter" /></a>
-      </li>
     </ul>
   </footer>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
-
 </body>
 
 </html>
