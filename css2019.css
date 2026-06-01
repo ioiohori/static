@@ -21,39 +21,84 @@ main {
  margin:0 auto 10px;
 } */
 
+header {
+  background: linear-gradient(180deg, #1f1b33 0%, #161228 100%);
+  overflow: hidden;
+  border-bottom: 1px solid rgba(201, 168, 216, 0.18);
+}
+
 .headerImages {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
-  margin-top: 15px;
+  align-items: center;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding: 13px 30px;
+}
+
+.headerImages .logo {
+  height: 30px;
+  width: auto;
+  transition: opacity 0.3s;
+}
+
+.headerImages a:hover .logo {
+  opacity: 0.8;
+}
+
+.headerImages img:not(.logo) {
+  height: 26px;
+  width: auto;
+  opacity: 0.92;
 }
 
 .headtertop {
   display: flex;
   margin: 0 auto;
   justify-content: center;
-  background-color: #333333;
-  /* padding: 0 20px; */
-  /* max-width: 1200px; */
+  gap: 2px;
+  background-color: transparent;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 .headtertop li {
-  margin: 0 20px;
+  margin: 0;
 }
 
 .headtertop li a {
-  height: 50px;
-
-  color: #fff;
+  position: relative;
+  height: 46px;
+  color: rgba(255, 255, 255, 0.72);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  transition: 0.3s;
-  padding: 0 10px;
+  font-size: 0.86em;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  transition: color 0.3s;
+  padding: 0 26px;
+}
+
+.headtertop li a::after {
+  content: "";
+  position: absolute;
+  left: 26px;
+  right: 26px;
+  bottom: 11px;
+  height: 1.5px;
+  background: linear-gradient(90deg, #9b6bb0, #c9a8d8);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.headtertop li a:hover {
+  color: #fff;
+}
+
+.headtertop li a:hover::after {
+  transform: scaleX(1);
 }
 
 /* HPの幅が950～1000だからMAXWIDTHを950に設定する。その後に、余った余白（マージン）を左右多少に分ける。 */
@@ -117,7 +162,7 @@ font-weight: bold;
 }
 @media screen and (min-width: 769px) {
   .headtertop li a:hover{
-    opacity: 0.7;
+    color: #fff;
   }
 }
 .ticketbutton a{
@@ -741,7 +786,14 @@ body {
   .headtertop li a {
     height: 38px;
     font-size: 0.82em;
-    padding: 0 5px;
+    letter-spacing: 0.08em;
+    padding: 0 12px;
+  }
+
+  .headtertop li a::after {
+    left: 10px;
+    right: 10px;
+    bottom: 7px;
   }
 
   .news-date,
@@ -902,3 +954,34 @@ body {
   line-height: 2.0;
   margin-bottom: 20px;
 }
+
+/* SNSリンク（Facebook / Instagram / YouTube） */
+.sns-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 25px 0 10px;
+}
+.sns-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #fff;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.sns-links a:hover {
+  transform: translateY(-3px);
+  opacity: 0.85;
+}
+.sns-links svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+.sns-fb { background: #1877f2; }
+.sns-ig { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+.sns-yt { background: #ff0000; }
