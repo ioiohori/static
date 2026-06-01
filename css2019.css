@@ -36,7 +36,13 @@ header {
   padding: 13px 30px;
 }
 
+.headerImages a {
+  display: flex;
+  align-items: center;
+}
+
 .headerImages .logo {
+  display: block;
   height: 30px;
   width: auto;
   transition: opacity 0.3s;
@@ -47,6 +53,7 @@ header {
 }
 
 .headerImages img:not(.logo) {
+  display: block;
   height: 26px;
   width: auto;
   opacity: 0.92;
@@ -67,25 +74,30 @@ header {
 
 .headtertop li a {
   position: relative;
-  height: 46px;
-  color: rgba(255, 255, 255, 0.72);
+  height: 40px;
+  color: rgba(255, 255, 255, 0.78);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 0.86em;
-  font-weight: 400;
-  letter-spacing: 0.16em;
-  transition: color 0.3s;
-  padding: 0 26px;
+  font-family: 'Cormorant Garamond', 'Noto Serif JP', 'Yu Mincho', serif;
+  font-size: 0.85em;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  transition: color 0.3s, text-shadow 0.3s;
+  padding: 0 20px;
+}
+
+.headtertop li a:hover {
+  text-shadow: 0 0 18px rgba(201, 168, 216, 0.45);
 }
 
 .headtertop li a::after {
   content: "";
   position: absolute;
-  left: 26px;
-  right: 26px;
-  bottom: 11px;
+  left: 20px;
+  right: 20px;
+  bottom: 9px;
   height: 1.5px;
   background: linear-gradient(90deg, #9b6bb0, #c9a8d8);
   transform: scaleX(0);
@@ -753,7 +765,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    padding: 0 10px;
+    padding: 9px 12px;
     gap: 8px;
   }
 
@@ -763,7 +775,10 @@ body {
   }
 
   .headerImages .logo {
-    max-width: 200px;
+    height: 26px;
+    width: auto;
+    max-width: none;
+    flex-shrink: 0;
   }
 
   .headerImages img:not(.logo) {
@@ -985,3 +1000,28 @@ body {
 .sns-fb { background: #1877f2; }
 .sns-ig { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
 .sns-yt { background: #ff0000; }
+
+/* スマホ: タブを縮小し、ホームを含む全タブを1行に収める（各ページのinline @media を !important で上書き） */
+@media screen and (max-width: 768px) {
+  .headtertop {
+    flex-wrap: nowrap !important;
+    gap: 0 !important;
+    padding: 0 !important;
+  }
+  .headtertop li,
+  .headtertop li:first-child {
+    display: flex !important;
+    margin: 0 !important;
+  }
+  .headtertop li a {
+    height: 32px !important;
+    font-size: 0.68em !important;
+    letter-spacing: 0.01em !important;
+    padding: 0 6px !important;
+  }
+  .headtertop li a::after {
+    left: 5px !important;
+    right: 5px !important;
+    bottom: 5px !important;
+  }
+}
