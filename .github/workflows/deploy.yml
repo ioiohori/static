@@ -1,0 +1,86 @@
+name: Deploy to production (FTP)
+
+# main への push で起動するが、production environment の承認待ちで一時停止。
+# GitHub 上で Approve を押した時だけ本番(www.tate.jp / IIS)へFTP反映する。
+#
+# 方針（本番にGit外の手編集が多数あるため）:
+#  - 今回の push で「追加・変更」された追跡ファイルだけをアップロード
+#  - 削除(D)は自動実行しない（本番ファイルを誤って消さない）。削除分はログに警告表示のみ
+#  - .github/ などの非サイトファイルはアップロード対象外
+
+on:
+  push:
+    branches: [main]
+
+# 同時に複数デプロイが走らないよう直列化（承認待ちは温存）
+concurrency:
+  group: ftp-deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production   # ← required reviewers による承認ゲート
+    steps:
+      - name: Checkout (full history)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # github.event.before との diff に履歴が必要
+
+      - name: Determine changed files (Added/Modified only)
+        id: changes
+        run: |
+          set -euo pipefail
+          BEFORE='${{ github.event.before }}'
+          AFTER='${{ github.sha }}'
+          ZERO='0000000000000000000000000000000000000000'
+          if [ -z "$BEFORE" ] || [ "$BEFORE" = "$ZERO" ] || ! git cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
+            echo "有効な before SHA が無いため、直前コミットとの差分にフォールバック"
+            BEFORE="${AFTER}~1"
+          fi
+
+          # 追加・変更ファイル
+          git diff --name-only --diff-filter=AM "$BEFORE" "$AFTER" > changed.txt || true
+          # 削除ファイル（警告表示のみ・自動削除しない）
+          git diff --name-only --diff-filter=D "$BEFORE" "$AFTER" > deleted.txt || true
+
+          echo "===== 追加・変更（アップ対象候補） ====="
+          cat changed.txt || true
+          echo "===== 削除（本番では手動対応してください・自動削除しません） ====="
+          cat deleted.txt || true
+
+      - name: Upload changed files via FTP
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASS: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          set -euo pipefail
+          if [ ! -s changed.txt ]; then
+            echo "アップロード対象なし。終了します。"
+            exit 0
+          fi
+
+          uploaded=0
+          skipped=0
+          while IFS= read -r f; do
+            [ -z "$f" ] && continue
+
+            # 非サイトファイルは除外
+            case "$f" in
+              .github/*|.gitignore|.gitattributes|CLAUDE.md|README*|.git/*)
+                echo "skip (非サイト): $f"; skipped=$((skipped+1)); continue;;
+            esac
+
+            if [ ! -f "$f" ]; then
+              echo "skip (ファイル無し): $f"; skipped=$((skipped+1)); continue
+            fi
+
+            # パスをURLエンコード（"company tate/" などスペース対策。/ は維持）
+            enc=$(python3 -c "import urllib.parse,sys; print(urllib.parse.quote(sys.argv[1]))" "$f")
+            echo "アップロード: $f  ->  ftp://$FTP_HOST/$enc"
+            curl -sS --fail --ftp-create-dirs -T "$f" --user "$FTP_USER:$FTP_PASS" "ftp://$FTP_HOST/$enc"
+            uploaded=$((uploaded+1))
+          done < changed.txt
+
+          echo "===== 完了: アップ ${uploaded} 件 / スキップ ${skipped} 件 ====="
