@@ -2,6 +2,7 @@
 <html lang="ja">
 
 <head>
+  <meta name="robots" content="noindex, follow">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="エリーナ・ガランチャ　メゾソプラノ　リサイタル2026">
@@ -26,7 +27,6 @@
 
     /* ヒーロー */
     .gc-hero {
-      position: relative;
       width: 100%;
       overflow: hidden;
       background: #1a1a2e;
@@ -35,15 +35,11 @@
       width: 100%;
       height: auto;
       display: block;
-      opacity: 0.85;
     }
-    .gc-hero-overlay {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: linear-gradient(transparent, rgba(26,26,46,0.95));
-      padding: 80px 40px 40px;
+    .gc-hero-text {
+      background: #1a1a2e;
+      text-align: center;
+      padding: 40px 30px;
       color: #fff;
     }
     .gc-hero-label {
@@ -58,7 +54,6 @@
       font-weight: 300;
       letter-spacing: 0.1em;
       line-height: 1.3;
-      text-shadow: 0 2px 8px rgba(0,0,0,0.5);
     }
     .gc-hero-sub {
       font-size: 1.1em;
@@ -141,6 +136,13 @@
       color: #999;
       margin-top: 20px;
       line-height: 1.8;
+    }
+    .gc-section-title .ja {
+      font-size: 0.55em;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: #888;
+      margin-left: 12px;
     }
 
     /* 公演について */
@@ -325,8 +327,8 @@
       .headerImages { flex-direction: row; align-items: center; justify-content: flex-start; padding: 0 10px; gap: 8px; }
       .headerImages img { max-width: 100%; height: auto; } .headerImages img:not(.logo) { display: none; }
       .headtertop { flex-wrap: wrap; }
-      .headtertop li:first-child { display: none; } .headtertop li { margin: 0 8px; }
-      .headtertop li a { height: 40px; font-size: 0.85em; padding: 0 5px; }
+      .headtertop li:first-child { display: none; } .headtertop li { margin: 0; }
+      .headtertop li a { height: 42px; font-size: 0.8em; padding: 0 12px; letter-spacing: 0.05em; }
       .gc-hero-overlay { padding: 40px 20px 20px; }
       .gc-hero-title { font-size: 1.8em; }
       .gc-hero-sub { font-size: 0.95em; }
@@ -381,20 +383,11 @@
     <!-- ヒーロー -->
     <div class="gc-hero">
       <img src="../index/garancha_banner.jpg" alt="エリーナ・ガランチャ">
-      <div class="gc-hero-overlay">
-        <div class="gc-hero-label">TATE CORPORATION PRESENTS</div>
-        <div class="gc-hero-title">Elina Garanča</div>
-        <div class="gc-hero-sub">メゾソプラノ　リサイタル 2026</div>
-      </div>
     </div>
-
-    <!-- カルメン画像ギャラリー -->
-    <div style="max-width: 900px; margin: 0 auto; padding: 30px 30px 0;">
-      <div class="gc-gallery">
-        <div style="flex: 2;"><img src="../index/garancha_carmen1.jpg" alt="カルメン"></div>
-        <div style="flex: 1;"><img src="../index/garancha_carmen2.jpg" alt="カルメン"></div>
-        <div style="flex: 1;"><img src="../index/garancha_carmen3.jpg" alt="カルメン"></div>
-      </div>
+    <div class="gc-hero-text">
+      <div class="gc-hero-label">TATE CORPORATION PRESENTS</div>
+      <div class="gc-hero-title">Elina Garanča</div>
+      <div class="gc-hero-sub">メゾソプラノ　リサイタル 2026</div>
     </div>
 
     <!-- 公演情報 -->
@@ -409,7 +402,7 @@
         <div class="gc-date-block">
           <div class="day">2026年11月3日(火・祝)</div>
           <div class="time">開場 12:00 / 開演 13:00</div>
-          <div class="venue">サントリーホール 大ホール</div>
+          <div class="venue">サントリーホール 大ホール（開館40周年記念参加公演）</div>
           <div class="org">主催：テイト・コーポレーション / 協力：サントリーホール / 後援：駐日ラトビア共和国大使館</div>
         </div>
         <div class="gc-credits">
@@ -431,6 +424,12 @@
         オペラ界のスターの一人として頂点で活躍し続けるエリーナ・ガランチャの偉業を達成できる歌手は、他にはほとんどいないだろう。演じる象徴的な主役は常に称賛されている。<br><br>
         彼女は、演じるそれぞれの役との深いつながりを築くための、「暖かく力強く、特別な暗さと情熱的な声」、「圧倒的な存在感」、「魅力的なルックス」で完璧なバランスをつくる素晴らしいアーティストである。世界的に有名なオペラハウス（メトロポリタンオペラ、ロイヤルオペラハウス、ウィーン国立歌劇場、バイエルン国立歌劇場）などで、定期的に代表的な演目の主演を演じている。今、最も世界的に注目されているメゾソプラノ歌手である。
       </div>
+      <!-- カルメン画像ギャラリー -->
+      <div class="gc-gallery" style="margin-top: 30px;">
+        <div style="flex: 2;"><img src="../index/garancha_carmen1.jpg" alt="カルメン"></div>
+        <div style="flex: 1;"><img src="../index/garancha_carmen2.jpg" alt="カルメン"></div>
+        <div style="flex: 1;"><img src="../index/garancha_carmen3.jpg" alt="カルメン"></div>
+      </div>
     </div>
 
     <div class="gc-divider"></div>
@@ -445,27 +444,32 @@
           <th style="width: 40%">料金（全席指定）</th>
         </tr>
         <tr>
-          <td>11月1日(日)</td>
+          <td>11月1日(日)<br><span style="font-size: 0.85em; color: #888;">開場 12:00 / 開演 13:00</span></td>
           <td>すみだトリフォニーホール　大ホール</td>
           <td>SS席 33,000円 / S席 31,000円<br>
             A席 29,000円 / B席 27,000円<br>
-            C席 25,000円 / P席 23,000円
+            C席 25,000円<br>
+            ミート＆グリート席 133,000円（<a href="../meet-greet.html" style="color: #9b6bb0;">詳細</a>）
           </td>
         </tr>
         <tr>
-          <td>11月3日(火・祝)</td>
+          <td colspan="3" style="font-size: 0.85em; color: #888; line-height: 1.7;">※車椅子席をご希望の方は、すみだトリフォニーホールのプレイガイドにお問合せください。<br>
+            トリフォニーホールチケットセンター　TEL:03-5608-1212(10:00～18:00)</td>
+        </tr>
+        <tr>
+          <td>11月3日(火・祝)<br><span style="font-size: 0.85em; color: #888;">開場 12:00 / 開演 13:00</span></td>
           <td>サントリーホール 大ホール</td>
           <td>SS席 33,000円 / S席 31,000円<br>
             A席 29,000円 / B席 27,000円<br>
-            C席 25,000円 / P席 23,000円
+            C席 25,000円 / P席 23,000円<br>
+            ミート＆グリート席 133,000円（<a href="../meet-greet.html" style="color: #9b6bb0;">詳細</a>）
           </td>
         </tr>
+        <tr>
+          <td colspan="3" style="font-size: 0.85em; color: #888; line-height: 1.7;">※車椅子席をご希望の方は、メールにてお問合せください。<br>
+            テイト・コーポレーション　<a href="mailto:webmaster@tate.jp">webmaster@tate.jp</a></td>
+        </tr>
       </table>
-      <div style="text-align: center; margin-top: 25px;">
-        <a href="garancha2026_meetgreet.html" class="gc-mg-link">
-          ★ ミート＆グリート 詳細はこちら →
-        </a>
-      </div>
     </div>
 
     <div class="gc-divider"></div>
@@ -474,13 +478,22 @@
     <div class="gc-section">
       <div class="gc-section-title">Schedule</div>
       <ul class="gc-schedule-list">
-        <li><span class="gc-schedule-label">情報公開日</span><span class="gc-schedule-date">4月1日(水)</span></li>
-        <li><span class="gc-schedule-label">主催者先行発売</span><span class="gc-schedule-date">6月6日(土) 10:00～</span></li>
-        <li><span class="gc-schedule-label">すみだトリフォニーホール先行発売</span><span class="gc-schedule-date">6月13日(土) 10:00～</span></li>
+        <li><span class="gc-schedule-label">主催者先行発売<br>（テイトチケットセンター）</span><span class="gc-schedule-date">TEL受付 6月6日(土) 10:00～ / Web受付 6月8日(月) 10:00～<br><span style="font-size: 0.9em; color: #888;">※主催者先行のWeb受付は、電話受付の後となりますがWeb用に良席を確保してあります。</span></span></li>
+        <li><span class="gc-schedule-label">すみだトリフォニーホール先行発売</span><span class="gc-schedule-date">6月15日(月) 10:00～</span></li>
         <li><span class="gc-schedule-label">サントリーホール先行発売</span><span class="gc-schedule-date">6月13日(土) 10:00～</span></li>
-        <li><span class="gc-schedule-label">プレイガイド先行発売</span><span class="gc-schedule-date">6月27日(土) 10:00～ 7月19日(日)</span></li>
+        <li><span class="gc-schedule-label">プレイガイド先行発売</span><span class="gc-schedule-date">6月27日(土) 10:00～</span></li>
         <li><span class="gc-schedule-label">一般発売</span><span class="gc-schedule-date">7月25日(土)</span></li>
       </ul>
+    </div>
+
+    <div class="gc-divider"></div>
+
+    <!-- ミート＆グリート -->
+    <div class="gc-section" style="text-align: center;">
+      <div class="gc-section-title" style="text-align: left;">Meet &amp; Greet<span class="ja">ミート＆グリート </span></div>
+      <p style="color: #555; font-size: 0.95em; line-height: 1.8; margin-bottom: 8px;">公演終了後、エリーナ・ガランチャに直に対面できる「ミート＆グリート」を実施致します。</p>
+      <p style="color: #555; font-size: 0.95em; line-height: 1.8;">写真撮影・サイン付きパンフレット等の特典付き。詳細・お申込み方法は専用ページをご覧ください。</p>
+      <a href="../meet-greet.html" class="gc-mg-link">ミート＆グリートの詳細はこちら →</a>
     </div>
 
     <div class="gc-divider"></div>
