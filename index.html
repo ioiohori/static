@@ -28,15 +28,16 @@
     .gc-hero {
       width: 100%;
       overflow: hidden;
-      background: #1a1a2e;
+      background: #1c1218;
     }
     .gc-hero img {
       width: 100%;
       height: auto;
       display: block;
+      object-fit: contain;
     }
     .gc-hero-text {
-      background: #1a1a2e;
+      background: #1c1218;
       text-align: center;
       padding: 40px 30px;
       color: #fff;
@@ -44,7 +45,7 @@
     .gc-hero-label {
       font-size: 0.85em;
       letter-spacing: 0.3em;
-      color: #c9a8d8;
+      color: #d4a574;
       margin-bottom: 12px;
     }
     .gc-hero-title {
@@ -58,7 +59,7 @@
       font-size: 1.1em;
       font-weight: 300;
       letter-spacing: 0.15em;
-      color: #e0d0e8;
+      color: #e8d4c0;
       margin-top: 10px;
     }
 
@@ -73,21 +74,21 @@
       font-size: 1.5em;
       font-weight: 600;
       letter-spacing: 0.12em;
-      color: #5b3a6b;
-      border-bottom: 1px solid #c9a8d8;
+      color: #6b2838;
+      border-bottom: 1px solid #d4a574;
       padding-bottom: 12px;
       margin-bottom: 30px;
     }
     .gc-divider {
       width: 60px;
       height: 1px;
-      background: #c9a8d8;
+      background: #d4a574;
       margin: 0 auto;
     }
 
     /* 公演情報 */
     .gc-info-dark {
-      background: #1a1a2e;
+      background: #1c1218;
       color: #fff;
       padding: 50px 30px;
     }
@@ -96,10 +97,10 @@
       margin: 0 auto;
     }
     .gc-date-block {
-      border-left: 3px solid #9b6bb0;
+      border-left: 3px solid #9b4d62;
       padding: 15px 20px;
       margin-bottom: 20px;
-      background: rgba(155,107,176,0.08);
+      background: rgba(155,77,98,0.08);
       border-radius: 0 6px 6px 0;
     }
     .gc-date-block .day {
@@ -113,7 +114,7 @@
     }
     .gc-date-block .venue {
       font-size: 1em;
-      color: #e0d0e8;
+      color: #e8d4c0;
       margin-top: 4px;
     }
     .gc-date-block .org {
@@ -159,7 +160,7 @@
       margin-bottom: 20px;
     }
     .gc-ticket-table th {
-      background: #5b3a6b;
+      background: #6b2838;
       color: #fff;
       padding: 12px 15px;
       font-size: 0.9em;
@@ -168,16 +169,16 @@
     }
     .gc-ticket-table td {
       padding: 15px;
-      border-bottom: 1px solid #ece3f0;
+      border-bottom: 1px solid #ede0e4;
       font-size: 0.95em;
       line-height: 1.6;
     }
     .gc-ticket-table tr:hover td {
-      background: #f9f5fb;
+      background: #faf6f7;
     }
     .gc-mg-link {
       display: inline-block;
-      background: linear-gradient(135deg, #5b3a6b, #9b6bb0);
+      background: linear-gradient(135deg, #6b2838, #9b4d62);
       color: #fff;
       padding: 15px 35px;
       font-size: 1.05em;
@@ -192,33 +193,9 @@
       opacity: 0.85;
     }
 
-    /* 発売スケジュール */
-    .gc-schedule-list {
-      list-style: none;
-      padding: 0;
-    }
-    .gc-schedule-list li {
-      display: flex;
-      padding: 14px 0;
-      border-bottom: 1px solid #ece3f0;
-      font-size: 0.95em;
-      line-height: 1.6;
-    }
-    .gc-schedule-list li:last-child {
-      border-bottom: none;
-    }
-    .gc-schedule-label {
-      min-width: 240px;
-      color: #5b3a6b;
-      font-weight: 500;
-    }
-    .gc-schedule-date {
-      color: #555;
-    }
-
     /* チケットセンター */
     .gc-ticket-center {
-      background: #f9f5fb;
+      background: #faf6f7;
       border-radius: 8px;
       padding: 30px;
       text-align: center;
@@ -238,11 +215,11 @@
     .gc-ticket-center-web {
       margin-top: 20px;
       padding-top: 20px;
-      border-top: 1px solid #e0d0e8;
+      border-top: 1px solid #e8d0d8;
     }
     .gc-web-btn {
       display: inline-block;
-      background: #9b6bb0;
+      background: #9b4d62;
       color: #fff;
       padding: 12px 40px;
       font-size: 1em;
@@ -252,7 +229,7 @@
       transition: background 0.3s;
     }
     .gc-web-btn:hover {
-      background: #7b4f90;
+      background: #7b3048;
     }
 
     /* プレイガイド */
@@ -261,7 +238,7 @@
       border-collapse: collapse;
     }
     .gc-pg-table th {
-      background: #5b3a6b;
+      background: #6b2838;
       color: #fff;
       padding: 12px 15px;
       font-size: 0.9em;
@@ -270,12 +247,79 @@
     }
     .gc-pg-table td {
       padding: 14px 15px;
-      border-bottom: 1px solid #ece3f0;
+      border-bottom: 1px solid #ede0e4;
       font-size: 0.9em;
       line-height: 1.6;
     }
     .gc-pg-table a {
-      color: #9b6bb0;
+      color: #9b4d62;
+    }
+
+    /* プログラム */
+    .gc-program-note {
+      font-size: 0.9em;
+      color: #888;
+      margin-bottom: 20px;
+      letter-spacing: 0.05em;
+    }
+    .gc-program-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 8px;
+    }
+    .gc-program-table th {
+      background: #6b2838;
+      color: #fff;
+      padding: 10px 14px;
+      font-size: 0.85em;
+      letter-spacing: 0.08em;
+      font-weight: 500;
+      text-align: left;
+    }
+    .gc-program-table td {
+      padding: 12px 14px;
+      border-bottom: 1px solid #ede0e4;
+      font-size: 0.93em;
+      line-height: 1.65;
+      vertical-align: top;
+    }
+    .gc-program-table tr:hover td {
+      background: #faf6f7;
+    }
+    .gc-program-table .composer {
+      width: 16%;
+      color: #6b2838;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+    .gc-program-table .title::before {
+      display: none;
+    }
+    .gc-program-table .performer {
+      width: 22%;
+      color: #888;
+      font-size: 0.9em;
+    }
+    .gc-program-table .sub {
+      display: block;
+      font-size: 0.88em;
+      color: #666;
+      margin-top: 4px;
+      line-height: 1.6;
+    }
+    .gc-intermission {
+      text-align: center;
+      padding: 28px 0;
+      font-size: 0.95em;
+      letter-spacing: 0.4em;
+      color: #9b4d62;
+      font-weight: 500;
+    }
+    .gc-program-disclaimer {
+      font-size: 0.85em;
+      color: #999;
+      margin-top: 20px;
+      line-height: 1.8;
     }
 
     /* プロフィール */
@@ -311,14 +355,31 @@
     }
     .gc-gallery {
       display: flex;
-      gap: 10px;
+      gap: 12px;
+      align-items: flex-start;
     }
-    .gc-gallery img {
-      width: 100% !important;
-      height: 220px !important;
-      object-fit: cover;
+    .gc-gallery-main,
+    .gc-gallery-item {
+      overflow: hidden;
       border-radius: 6px;
       box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+    .gc-gallery-main {
+      flex: 1.15;
+      min-width: 0;
+    }
+    .gc-gallery-side {
+      flex: 1;
+      min-width: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .gc-gallery-main img,
+    .gc-gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
 
     /* レスポンシブ対応 */
@@ -340,20 +401,35 @@
       .gc-date-block .org { font-size: 0.8em; }
       .gc-credits { font-size: 0.9em; line-height: 1.8; }
       .gc-about { font-size: 0.95em; line-height: 1.8; }
+      .gc-program-table { width: 100%; }
+      .gc-program-table th, .gc-program-table td { font-size: 0.82em; padding: 10px; }
+      .gc-program-table thead th.composer-col,
+      .gc-program-table td.composer,
+      .gc-program-table thead th.performer-col,
+      .gc-program-table td.performer { display: none; }
+      .gc-program-table .title::before {
+        content: attr(data-composer);
+        display: block;
+        color: #6b2838;
+        font-weight: 500;
+        font-size: 0.92em;
+        margin-bottom: 4px;
+      }
       .gc-ticket-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
       .gc-ticket-table th, .gc-ticket-table td { font-size: 0.85em; padding: 10px; white-space: nowrap; }
       .gc-mg-link { padding: 12px 25px; font-size: 0.95em; }
-      .gc-schedule-list li { flex-direction: column; gap: 4px; }
-      .gc-schedule-label { min-width: auto; font-size: 0.9em; }
-      .gc-schedule-date { font-size: 0.9em; }
       .gc-ticket-center-tel { font-size: 1.4em; }
       .gc-pg-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
       .gc-pg-table th, .gc-pg-table td { font-size: 0.85em; padding: 10px; }
       .gc-profile { flex-direction: column; align-items: center; }
       .gc-profile-img { width: 160px; min-width: 160px; }
       .gc-profile-text { font-size: 0.9em; line-height: 1.7; }
-      .gc-gallery { flex-direction: column; }
-      .gc-gallery img { height: auto !important; }
+      .gc-gallery {
+        flex-direction: column;
+      }
+      .gc-gallery-side {
+        grid-template-columns: 1fr 1fr;
+      }
       footer .company { flex-wrap: wrap; justify-content: center; gap: 5px; }
       footer .company li { margin-left: 10px; font-size: 0.85em; }
       .linkbanner.right { flex-wrap: wrap; justify-content: center; gap: 10px; }
@@ -411,23 +487,132 @@
           企画・制作・招聘：テイト・コーポレーション
         </div>
         <div class="gc-notes">
-          ※未就学児入場不可　　※公演時間は約２時間を予定しています
+          ※未就学児入場不可　　※公演時間は約２時間を予定しています<br>
+          ※<a href="#program" style="color: #d4a574;">演奏予定曲</a>を公開しました
         </div>
       </div>
     </div>
+
+    <!-- 演奏予定曲 -->
+    <div class="gc-section" id="program">
+      <div class="gc-section-title">Program<span class="ja">演奏予定曲</span></div>
+      <p class="gc-program-note">東京公演　2026年11月1日(日)・11月3日(火・祝)</p>
+      <table class="gc-program-table">
+        <thead>
+          <tr>
+            <th class="composer-col">作曲家</th>
+            <th>曲名</th>
+            <th class="performer-col">演奏者</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="composer">ヴェルディ</td>
+            <td class="title" data-composer="ヴェルディ">歌劇『ルイーザ・ミラー』序曲</td>
+            <td class="performer">オーケストラ</td>
+          </tr>
+          <tr>
+            <td class="composer">チレア</td>
+            <td class="title" data-composer="チレア">「私はか弱きしもべ」（歌劇『アドリアーナ・ルクヴルール』より）</td>
+            <td class="performer">エリーナ・ガランチャ</td>
+          </tr>
+          <tr>
+            <td class="composer">プッチーニ</td>
+            <td class="title" data-composer="プッチーニ">歌劇『マノン・レスコー』間奏曲</td>
+            <td class="performer">オーケストラ</td>
+          </tr>
+          <tr>
+            <td class="composer">プッチーニ</td>
+            <td class="title" data-composer="プッチーニ">「歌に生き、恋に生き」（歌劇『トスカ』より）</td>
+            <td class="performer">エリーナ・ガランチャ</td>
+          </tr>
+          <tr>
+            <td class="composer">マスカーニ</td>
+            <td class="title" data-composer="マスカーニ">「ママも知るとおり」（歌劇『カヴァレリア・ルスティカーナ』より）</td>
+            <td class="performer">エリーナ・ガランチャ</td>
+          </tr>
+          <tr>
+            <td class="composer">ポンキエッリ</td>
+            <td class="title" data-composer="ポンキエッリ">『ジョコンダ』より「時の踊り」</td>
+            <td class="performer">オーケストラ</td>
+          </tr>
+          <tr>
+            <td class="composer">チレア</td>
+            <td class="title" data-composer="チレア">「苦い悦び…さすらいの星よ」（歌劇『アドリアーナ・ルクヴルール』より）</td>
+            <td class="performer">エリーナ・ガランチャ</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="gc-intermission">休　憩</div>
+      <table class="gc-program-table">
+        <tbody>
+          <tr>
+            <td class="composer">バルビエリ</td>
+            <td class="title" data-composer="バルビエリ">「パロマの歌」（サルスエラ『ラバピエスの床屋』より）</td>
+            <td class="performer">エリーナ・ガランチャ</td>
+          </tr>
+          <tr>
+            <td class="composer">チャピ</td>
+            <td class="title" data-composer="チャピ">「ソコロのロマンサ」（サルスエラ『エル・バルキジェロ』より）</td>
+            <td class="performer">エリーナ・ガランチャ</td>
+          </tr>
+          <tr>
+            <td class="composer">チュエカ</td>
+            <td class="title" data-composer="チュエカ">『エル・バテオ』前奏曲</td>
+            <td class="performer">オーケストラ</td>
+          </tr>
+          <tr>
+            <td class="composer">マト／カステラオ</td>
+            <td class="title" data-composer="マト／カステラオ">「レラ」（デュラン編）</td>
+            <td class="performer">エリーナ・ガランチャ</td>
+          </tr>
+          <tr>
+            <td class="composer">スッペ</td>
+            <td class="title" data-composer="スッペ">歌劇『軽騎兵』序曲</td>
+            <td class="performer">オーケストラ</td>
+          </tr>
+          <tr>
+            <td class="composer">ナポリ民謡</td>
+            <td class="title" data-composer="ナポリ民謡">ナポリ民謡3曲
+              <span class="sub">1. 禁じられた音楽（ガスタルドン作曲、チチョン編）<br>
+                2. もう愛していない（トスティ作曲、チチョン編）<br>
+                3. マレキアーレ（トスティ作曲、チチョン編）</span>
+            </td>
+            <td class="performer">エリーナ・ガランチャ</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="gc-program-disclaimer">※プログラムは予告なく変更になる場合がございます。</p>
+    </div>
+
+    <div class="gc-divider"></div>
 
     <!-- 公演について -->
     <div class="gc-section">
       <div class="gc-section-title">About</div>
       <div class="gc-about">
-        オペラ界のスターの一人として頂点で活躍し続けるエリーナ・ガランチャの偉業を達成できる歌手は、他にはほとんどいないだろう。演じる象徴的な主役は常に称賛されている。<br><br>
-        彼女は、演じるそれぞれの役との深いつながりを築くための、「暖かく力強く、特別な暗さと情熱的な声」、「圧倒的な存在感」、「魅力的なルックス」で完璧なバランスをつくる素晴らしいアーティストである。世界的に有名なオペラハウス（メトロポリタンオペラ、ロイヤルオペラハウス、ウィーン国立歌劇場、バイエルン国立歌劇場）などで、定期的に代表的な演目の主演を演じている。今、最も世界的に注目されているメゾソプラノ歌手である。
+        イタリア・オペラの名曲からスペインのサルスエラ、ナポリ民謡まで——エリーナ・ガランチャの多彩な表現力が光る、オーケストラ伴奏のリサイタルプログラム。<br><br>
+        オペラ界のスターの一人として頂点で活躍し続けるエリーナ・ガランチャ。ヴェルディ、プッチーニ、チレアの名アリアをはじめ、情熱的な歌声で聴衆を魅了する。世界的に有名なオペラハウス（メトロポリタンオペラ、ロイヤルオペラハウス、ウィーン国立歌劇場、バイエルン国立歌劇場）などで、定期的に代表的な演目の主演を演じている。今、最も世界的に注目されているメゾソプラノ歌手である。
       </div>
-      <!-- カルメン画像ギャラリー -->
+      <!-- 公演写真ギャラリー -->
       <div class="gc-gallery" style="margin-top: 30px;">
-        <div style="flex: 2;"><img src="index/garancha_carmen1.jpg" alt="カルメン"></div>
-        <div style="flex: 1;"><img src="index/garancha_carmen2.jpg" alt="カルメン"></div>
-        <div style="flex: 1;"><img src="index/garancha_carmen3.jpg" alt="カルメン"></div>
+        <div class="gc-gallery-main">
+          <img src="index/garancha_dg.jpg" alt="エリーナ・ガランチャ">
+        </div>
+        <div class="gc-gallery-side">
+          <div class="gc-gallery-item">
+            <img src="index/Garanca1118_3.png" alt="エリーナ・ガランチャ ステージ">
+          </div>
+          <div class="gc-gallery-item">
+            <img src="index/Garanca1118_2.png" alt="エリーナ・ガランチャ リサイタル">
+          </div>
+          <div class="gc-gallery-item">
+            <img src="index/garancha_purple.jpg" alt="エリーナ・ガランチャ">
+          </div>
+          <div class="gc-gallery-item">
+            <img src="index/Garanca1118.png" alt="エリーナ・ガランチャ 公演">
+          </div>
+        </div>
       </div>
     </div>
 
@@ -448,7 +633,7 @@
           <td>SS席 33,000円 / S席 31,000円<br>
             A席 29,000円 / B席 27,000円<br>
             C席 25,000円<br>
-            ミート＆グリート席 133,000円（<a href="meet-greet.html" style="color: #9b6bb0;">詳細</a>）
+            ミート＆グリート席 133,000円（<a href="meet-greet.html" style="color: #9b4d62;">詳細</a>）
           </td>
         </tr>
         <tr>
@@ -463,7 +648,7 @@
           <td>SS席 33,000円 / S席 31,000円<br>
             A席 29,000円 / B席 27,000円<br>
             C席 25,000円 / P席 23,000円<br>
-            ミート＆グリート席 133,000円（<a href="meet-greet.html" style="color: #9b6bb0;">詳細</a>）
+            ミート＆グリート席 133,000円（<a href="meet-greet.html" style="color: #9b4d62;">詳細</a>）
           </td>
         </tr>
         <tr>
@@ -471,20 +656,6 @@
             テイト・コーポレーション　<a href="mailto:webmaster@tate.jp">webmaster@tate.jp</a></td>
         </tr>
       </table>
-    </div>
-
-    <div class="gc-divider"></div>
-
-    <!-- 発売スケジュール -->
-    <div class="gc-section">
-      <div class="gc-section-title">Schedule</div>
-      <ul class="gc-schedule-list">
-        <li><span class="gc-schedule-label">主催者先行発売<br>（テイトチケットセンター）</span><span class="gc-schedule-date">TEL受付 6月6日(土) 10:00～ / Web受付 6月8日(月) 10:00～<br><span style="font-size: 0.9em; color: #888;">※Web受付は、電話受付の後となりますがWeb用に良席を確保してあります。</span></span></li>
-        <li><span class="gc-schedule-label">すみだトリフォニーホール先行発売</span><span class="gc-schedule-date">6月15日(月) 10:00～</span></li>
-        <li><span class="gc-schedule-label">サントリーホール先行発売</span><span class="gc-schedule-date">6月13日(土) 10:00～</span></li>
-        <li><span class="gc-schedule-label">プレイガイド先行発売</span><span class="gc-schedule-date">6月27日(土) 10:00～</span></li>
-        <li><span class="gc-schedule-label">一般発売</span><span class="gc-schedule-date">7月25日(土)</span></li>
-      </ul>
     </div>
 
     <div class="gc-divider"></div>
