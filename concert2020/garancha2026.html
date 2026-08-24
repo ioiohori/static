@@ -348,6 +348,80 @@
       font-weight: 300;
       color: #444;
     }
+    .gc-flyer {
+      display: flex;
+      gap: 28px;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .gc-flyer-item {
+      width: 180px;
+      text-align: center;
+    }
+    .gc-flyer-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 4px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+      cursor: zoom-in;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .gc-flyer-item img:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.22);
+    }
+    .gc-flyer-cap {
+      margin-top: 10px;
+      font-size: 0.82em;
+      color: #888;
+      letter-spacing: 0.05em;
+    }
+    /* 拡大表示 */
+    .gc-lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.88);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      cursor: zoom-out;
+      padding: 24px;
+    }
+    .gc-lightbox.open { display: flex; }
+    .gc-lightbox img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    }
+    .gc-lightbox-close {
+      position: absolute;
+      top: 16px;
+      right: 24px;
+      color: #fff;
+      font-size: 2em;
+      line-height: 1;
+      background: none;
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+    }
+    .gc-lightbox-close:hover { opacity: 1; }
+    .gc-profile-text p {
+      margin-bottom: 1em;
+    }
+    .gc-profile-text p:last-child {
+      margin-bottom: 0;
+    }
+    .gc-profile-link a {
+      color: #9b4d62;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(155,77,98,0.4);
+    }
     .gc-profile-name {
       font-size: 1.15em;
       font-weight: 500;
@@ -514,7 +588,7 @@
           </tr>
           <tr>
             <td class="composer">チレア</td>
-            <td class="title" data-composer="チレア">「私はか弱きしもべ」（歌劇『アドリアーナ・ルクヴルール』より）</td>
+            <td class="title" data-composer="チレア">歌劇『アドリアーナ・ルクヴルール』より”私はか弱きしもべ”</td>
             <td class="performer">エリーナ・ガランチャ</td>
           </tr>
           <tr>
@@ -524,22 +598,22 @@
           </tr>
           <tr>
             <td class="composer">プッチーニ</td>
-            <td class="title" data-composer="プッチーニ">「歌に生き、恋に生き」（歌劇『トスカ』より）</td>
+            <td class="title" data-composer="プッチーニ">歌劇『トスカ』より”歌に生き、恋に生き”</td>
             <td class="performer">エリーナ・ガランチャ</td>
           </tr>
           <tr>
             <td class="composer">マスカーニ</td>
-            <td class="title" data-composer="マスカーニ">「ママも知るとおり」（歌劇『カヴァレリア・ルスティカーナ』より）</td>
+            <td class="title" data-composer="マスカーニ">歌劇『カヴァレリア・ルスティカーナ』より”ママも知るとおり”</td>
             <td class="performer">エリーナ・ガランチャ</td>
           </tr>
           <tr>
             <td class="composer">ポンキエッリ</td>
-            <td class="title" data-composer="ポンキエッリ">『ジョコンダ』より「時の踊り」</td>
+            <td class="title" data-composer="ポンキエッリ">歌劇『ジョコンダ』より”時の踊り”</td>
             <td class="performer">オーケストラ</td>
           </tr>
           <tr>
             <td class="composer">チレア</td>
-            <td class="title" data-composer="チレア">「苦い悦び…さすらいの星よ」（歌劇『アドリアーナ・ルクヴルール』より）</td>
+            <td class="title" data-composer="チレア">歌劇『アドリアーナ・ルクヴルール』より”苦い悦び…さすらいの星よ”</td>
             <td class="performer">エリーナ・ガランチャ</td>
           </tr>
         </tbody>
@@ -549,12 +623,12 @@
         <tbody>
           <tr>
             <td class="composer">バルビエリ</td>
-            <td class="title" data-composer="バルビエリ">「パロマの歌」（サルスエラ『ラバピエスの床屋』より）</td>
+            <td class="title" data-composer="バルビエリ">サルスエラ『ラバピエスの床屋』より”パロマの歌”</td>
             <td class="performer">エリーナ・ガランチャ</td>
           </tr>
           <tr>
             <td class="composer">チャピ</td>
-            <td class="title" data-composer="チャピ">「ソコロのロマンサ」（サルスエラ『エル・バルキジェロ』より）</td>
+            <td class="title" data-composer="チャピ">サルスエラ『エル・バルキジェロ』より”ソコロのロマンサ”</td>
             <td class="performer">エリーナ・ガランチャ</td>
           </tr>
           <tr>
@@ -677,7 +751,7 @@
         <div class="gc-ticket-center-tel">03-6774-1968</div>
         <div class="gc-ticket-center-hours">10:00～19:00（土日祝日も受付）</div>
         <div class="gc-ticket-center-web">
-          <a href="https://maichike.com/" target="_blank" class="gc-web-btn">マイチケ →</a>
+          <a href="https://maichike.com/o/20108/events/794" target="_blank" class="gc-web-btn">マイチケ →</a>
         </div>
       </div>
     </div>
@@ -694,17 +768,17 @@
         </tr>
         <tr>
           <td>チケットぴあ</td>
-          <td><a href="https://t.pia.jp/" target="_blank">https://t.pia.jp/</a><br>
+          <td><a href="https://t.pia.jp/pia/event/event.do?eventBundleCd=b2668812" target="_blank">チケットぴあ 公演ページ →</a><br>
             セブンイレブン各店マルチコピー機(直接購入)</td>
         </tr>
         <tr>
           <td>イープラス</td>
-          <td><a href="https://eplus.jp" target="_blank">https://eplus.jp</a><br>
+          <td><a href="https://eplus.jp/sf/detail/3050690001" target="_blank">イープラス 公演ページ →</a><br>
             ファミリーマート各店マルチコピー機(直接購入)</td>
         </tr>
         <tr>
           <td>ローソンチケット</td>
-          <td><a href="https://l-tike.com/" target="_blank">https://l-tike.com/</a><br>
+          <td><a href="https://l-tike.com/classic/mevent/?mid=784612" target="_blank">ローソンチケット 公演ページ →</a><br>
             ローソン・ミニストップ各店内Loppi(直接購入)</td>
         </tr>
       </table>
@@ -718,12 +792,23 @@
 
       <div class="gc-profile">
         <div class="gc-profile-img">
-          <img src="../index/elina_profile.jpg" alt="エリーナ・ガランチャ">
+          <img src="../index/garancha_profile2026.jpg" alt="エリーナ・ガランチャ">
         </div>
         <div class="gc-profile-text">
           <div class="gc-profile-name">エリーナ・ガランチャ（メゾソプラノ）</div>
-          オペラ界のスターの一人として頂点で活躍し続けるエリーナ・ガランチャの偉業を達成できる歌手は、他にはほとんどいないだろう。演じる象徴的な主役は常に称賛されている。
-          彼女は、演じるそれぞれの役との深いつながりを築くための、「暖かく力強く、特別な暗さと情熱的な声」、「圧倒的な存在感」、「魅力的なルックス」で完璧なバランスをつくる素晴らしいアーティストである。世界的に有名なオペラハウス（メトロポリタンオペラ、ロイヤルオペラハウス、ウィーン国立歌劇場、バイエルン国立歌劇場）などで、定期的に代表的な演目の主演を演じている。今、最も世界的に注目されているメゾソプラノ歌手である。
+          <p>過去10年以上にわたって、オペラ界のスターの一人として頂点で活躍し続ける、エリーナ・ガランチャの偉業を達成できる歌手は、他にはほとんどいないだろう。ラトビア生まれのメゾソプラノは演じる象徴的な主役を常に称賛されている。彼女は、演じるそれぞれの役との深いつながりを築くための、「暖かく力強く、特別な暗さと情熱的な声」、「圧倒的な存在感」、「魅力的なルックス」で完璧なバランスをつくる素晴らしいアーティストである。世界的に有名なオペラハウス（メトロポリタンオペラ、ロイヤルオペラハウス、ウィーン国立歌劇場、バイエルン国立歌劇場）などで、定期的に代表的な演目の主演を演じ、女性歌手として最年少で宮廷歌手（Kammersänger）の称号を受賞した。2005年にドイツ・グラモフォンの専属アーティストとなってから、6枚のソロアルバムを発表し、そのうち3枚はヨーロッパ版グラミー賞ともいわれる「エコー賞」を受賞した。</p>
+          <p>また彼女の代表的な公演をとらえたDVDなど様々なディスコグラフィーを制作している。</p>
+          <p>たくさんのオペラやコンサートで活躍する一方、Primadonna on Rollerskates（2002）など頻繁にドキュメンタリーやトークショーにも出演。昨年オーストリアのEcowin Verlagからは彼女の伝記が出版された。</p>
+          <p>2003年にニコラウス・アーノンクールと共演した「皇帝ティートの慈悲」（Annio役）でザルツブルク音楽祭デビューしたことが国際的な突破口になった。「カヴァレリア・ルスティカーナ」（Lola役）でウィーン国立歌劇場のデビューをしたのち、専属ソリスト歌手となり、現在のベルカントやロマンティックで群を抜いた存在になる前は、モーツァルトを多く歌っていた。出演演目にはリッカルド・ムーティと共演した「フィガロの結婚」（Cherubino役）や、「ばらの騎士」（Octavian役）と、テレビで放映されたマスネの「ウェルテル」（Charlotte役）などがあり、現在までに150以上の演目に出演してきた。また、ヘルシンキ、ルツェルン、グラーツ、パリ、エクス＝アン＝プロヴァンスでも、パトリス・シェローのプロダクションで「コジ・ファン・トゥッテ」に出演し、その公演はDVDになった。2007年には「コジ・ファン・トゥッテ」（Dorabella役）でロンドンのロイヤルオペラハウスに出演した。</p>
+          <p>2008年には、「セビリアの理髪師」でロッシーニを歌い、メトロポリタンオペラでのセンセーショナルなデビューを果たした。</p>
+          <p>2009年、ロイヤルオペラハウス、メトロポリタンオペラでのリチャード・エア演出による「カルメン」では、ロベルト・アラーニャの相手役を務め、彼女の代表的なパフォーマンスとして世界中の1000以上の劇場でその模様がライブビューイングとして放送された。</p>
+          <p>その他にもメトロポリタン歌劇場で出演したモーツァルト作曲「皇帝ティートの慈悲」、「チェネレントラ」はライブビューイングシリーズに加えられ、この3作品はPBS TVの“メトロポリタン歌劇場グレートコンサート”として続けて放映された。PBS「“グレートコンサート”シリーズ40周年記念番組」では特別コンサートにジュリー・アンドリュース、アイザック・スターンなど、世界的なスターたちとともに選ばれた。</p>
+          <p>ガランチャは、世界的なソプラノ歌手、アンナ・ネトレプコと共演し、ファビオ・ルイージ指揮、ウィーン交響楽団の演奏で、ベッリーニ作曲「カプレーティとモンテッキ」を収録し、ウィーン国立歌劇場でのドニゼッティ作曲「アンナ・ボレーナ」の公演はテレビ放映され、後にDVD化された。</p>
+          <p>また、この二人のペアで、バーデン・バーデン祝祭劇場のオペラガラコンサートにも出演し、ドイツのテレビ局では200万人をこえる視聴者にライブ中継され、DVDにもなった。</p>
+          <p>その他の特別なレコーディングとしてはスカラ座でのダニエル・バレンボイム指揮、ヴェルディ作曲「レクイエム」、ドレスデン・シュターツカペレでのクリスティアン・ティーレマン指揮、ベートーヴェン作曲「ミサ・ソレムニス」、グスターボ・ドゥダメル指揮、ベルリン・フィルハーモニー管弦楽団との共演でのニューイヤーズイブコンサート、ファビオ・ビオンディと共演したヴィヴァルディ作曲「バヤゼット」は、グラミー賞にノミネートされ、フランス最大の音楽賞、MIDEM Classical Awardを受賞。これまでに6枚のソロアルバムを出している。最初のアルバム「Aria Cantilena」はECHO Klassikの“Singer of the Year”を受賞し、「Bel Canto」ではBBC Music Magazine Awardを受賞し、「Romantique」はECHO Klassik 2013のベストソロレコーディング賞を受賞している。</p>
+          <p>2014-2015年シーズンは、アルバム「Meditation」の発売から始まった。彼女とアラーニャはメトロポリタンでの「カルメン」の主役をくりかえし、その「カルメン」でスカラ座でのデビューを果たす。シュトラウスの「ばらの騎士」のためにウィーンとベルリンに戻り、マスカーニ作曲「カヴァレリア・ルスティカーナ」では、ヨナス・カウフマンとパートナーを組むために、そしてリッカルド・シャイー指揮の、ヴェルディ作曲「レクイエム」のソリストとしてドリームチームに参加するためにミラノに戻った。彼女はカーネギー・ホールでジェームズ・レヴァインの指揮でベルクの作品を歌い、そしてカレル・マーク・チチョンとのヨーロッパツアーを引き受けた。前シーズンにおこなったカーネギー・ホールとスカラ座でのリサイタルデビューのあと、ピアニスト、マルコム・マルティノと再び組み、ロンドン、チューリッヒ、グラーツ、ウィーン、ザルツブルクでリサイタルを行う。サマーシーズンでは人気のある“Elīna Garanča and Friends”コンサートをオーストリアで行い、ザルツブルク音楽祭では「ウェルテル」（Charlotte役）に出演。</p>
+          <p>ガランチャは2001年のBBC Cardiff Singer of the World Competitionの最終候補に残り、Musical Americaの“Vocalist of the Year 2010”とMIDEM Classicalの“Singer of the Year 2010”に輝く。また、Latvian Great Music Awardsに2000年と2010年に選ばれ、2007年にはラトビア文化功労賞を、2006年にはドレスデンのゼンパー・オーパーでのガラ公演の模様が放送され、ヨーロッパ文化賞を受賞している。今、最も世界的に注目されているアーティストである。</p>
+          <p class="gc-profile-link"><a href="https://www.facebook.com/elinagaranca" target="_blank" rel="noopener">エリーナ・ガランチャ 公式Facebook →</a></p>
         </div>
       </div>
 
@@ -755,6 +840,25 @@
       </div>
     </div>
 
+
+    <div class="gc-divider"></div>
+
+    <!-- チラシ -->
+    <div class="gc-section">
+      <div class="gc-section-title">Flyer<span class="ja">チラシ</span></div>
+      <div class="gc-flyer">
+        <div class="gc-flyer-item">
+          <img src="../index/garancha2026_flyer_front.jpg" alt="エリーナ・ガランチャ メゾソプラノ リサイタル2026 チラシ 表面" loading="lazy" data-lightbox>
+          <div class="gc-flyer-cap">表面</div>
+        </div>
+        <div class="gc-flyer-item">
+          <img src="../index/garancha2026_flyer_back.jpg" alt="エリーナ・ガランチャ メゾソプラノ リサイタル2026 チラシ 裏面" loading="lazy" data-lightbox>
+          <div class="gc-flyer-cap">裏面</div>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top:14px; font-size:0.85em; color:#aaa;">画像をクリックすると拡大表示されます</p>
+    </div>
+
   </div>
 
   <!--footer-->
@@ -777,6 +881,31 @@
       <a href="https://www.youtube.com/@Tate_Corporation" target="_blank" rel="noopener" aria-label="YouTube" class="sns-yt"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
     </div>
   </footer>
+
+  <!-- 画像拡大表示 -->
+  <div class="gc-lightbox" id="gcLightbox">
+    <button class="gc-lightbox-close" type="button" aria-label="閉じる">&times;</button>
+    <img src="" alt="">
+  </div>
+  <script>
+    (function () {
+      var box = document.getElementById('gcLightbox');
+      if (!box) return;
+      var img = box.querySelector('img');
+      function close() { box.classList.remove('open'); img.src = ''; }
+      document.querySelectorAll('[data-lightbox]').forEach(function (el) {
+        el.addEventListener('click', function () {
+          img.src = el.getAttribute('src');
+          img.alt = el.getAttribute('alt') || '';
+          box.classList.add('open');
+        });
+      });
+      box.addEventListener('click', close);
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') close();
+      });
+    })();
+  </script>
 </body>
 
 </html>
