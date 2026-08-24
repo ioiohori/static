@@ -7,3 +7,6 @@
 *.mp4
 _requests/
 CLAUDE.md
+
+# Claude Code のローカル設定
+.claude/
