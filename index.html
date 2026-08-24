@@ -347,6 +347,74 @@
       font-weight: 300;
       color: #444;
     }
+    /* 動画 */
+    .gc-videos {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gc-video-item {
+      flex: 1 1 260px;
+      min-width: 240px;
+      max-width: 300px;
+    }
+    .gc-video-frame {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 4px;
+      background: #000;
+      cursor: pointer;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .gc-video-frame:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.22);
+    }
+    .gc-video-frame img,
+    .gc-video-frame iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      border: 0;
+    }
+    .gc-video-frame img { object-fit: cover; }
+    .gc-video-play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 54px;
+      height: 38px;
+      border-radius: 8px;
+      background: rgba(0,0,0,0.65);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.25s;
+      pointer-events: none;
+    }
+    .gc-video-frame:hover .gc-video-play { background: #c4302b; }
+    .gc-video-play::before {
+      content: '';
+      border-style: solid;
+      border-width: 8px 0 8px 14px;
+      border-color: transparent transparent transparent #fff;
+      margin-left: 3px;
+    }
+    .gc-video-title {
+      margin-top: 10px;
+      font-size: 0.85em;
+      line-height: 1.6;
+      color: #555;
+      text-align: center;
+    }
     .gc-flyer {
       display: flex;
       gap: 28px;
@@ -734,6 +802,37 @@
 
     <div class="gc-divider"></div>
 
+    <!-- 動画 -->
+    <div class="gc-section">
+      <div class="gc-section-title">Movie<span class="ja">動画</span></div>
+      <div class="gc-videos">
+        <div class="gc-video-item">
+          <div class="gc-video-frame" data-yt="TiAQRAWb2kA" role="button" tabindex="0" aria-label="歌劇『トスカ』より”歌に生き、恋に生き” の動画を再生">
+            <img src="https://img.youtube.com/vi/TiAQRAWb2kA/hqdefault.jpg" alt="歌劇『トスカ』より”歌に生き、恋に生き”" loading="lazy">
+            <span class="gc-video-play"></span>
+          </div>
+          <div class="gc-video-title">歌劇『トスカ』より”歌に生き、恋に生き”</div>
+        </div>
+        <div class="gc-video-item">
+          <div class="gc-video-frame" data-yt="hs4BlQgkELc" role="button" tabindex="0" aria-label="歌劇『カヴァレリア・ルスティカーナ』より”ママも知るとおり” の動画を再生">
+            <img src="https://img.youtube.com/vi/hs4BlQgkELc/hqdefault.jpg" alt="歌劇『カヴァレリア・ルスティカーナ』より”ママも知るとおり”" loading="lazy">
+            <span class="gc-video-play"></span>
+          </div>
+          <div class="gc-video-title">歌劇『カヴァレリア・ルスティカーナ』より”ママも知るとおり”</div>
+        </div>
+        <div class="gc-video-item">
+          <div class="gc-video-frame" data-yt="Nhfy2F6CYBY" role="button" tabindex="0" aria-label="歌劇『アドリアーナ・ルクヴルール』より”私はか弱きしもべ” の動画を再生">
+            <img src="https://img.youtube.com/vi/Nhfy2F6CYBY/hqdefault.jpg" alt="歌劇『アドリアーナ・ルクヴルール』より”私はか弱きしもべ”" loading="lazy">
+            <span class="gc-video-play"></span>
+          </div>
+          <div class="gc-video-title">歌劇『アドリアーナ・ルクヴルール』より”私はか弱きしもべ”</div>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top:16px; font-size:0.85em; color:#aaa;">サムネイルをクリックすると再生します</p>
+    </div>
+
+    <div class="gc-divider"></div>
+
     <!-- ミート＆グリート -->
     <div class="gc-section" style="text-align: center;">
       <div class="gc-section-title" style="text-align: left;">Meet &amp; Greet<span class="ja">ミート＆グリート </span></div>
@@ -835,7 +934,7 @@
           2023年4月より佐渡裕が第５代音楽監督に就任。街・ホール・オーケストラが一体となった音楽活動を行う。
           <br><br>
           <span style="font-size: 0.9em; color: #888;">
-            公式ウェブサイト：www.njp.or.jp / 公式X：@newjapanphil
+            公式ウェブサイト：<a href="https://www.njp.or.jp/" target="_blank" rel="noopener" style="color:#9b4d62;">www.njp.or.jp</a> / 公式X：<a href="https://x.com/newjapanphil" target="_blank" rel="noopener" style="color:#9b4d62;">@newjapanphil</a>
           </span>
         </div>
       </div>
@@ -904,6 +1003,31 @@
       box.addEventListener('click', close);
       document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape') close();
+      });
+    })();
+  </script>
+
+  <script>
+    // YouTube サムネイル: クリックされて初めて iframe を読み込む
+    (function () {
+      function play(el) {
+        var id = el.getAttribute('data-yt');
+        if (!id || el.dataset.loaded) return;
+        el.dataset.loaded = '1';
+        var f = document.createElement('iframe');
+        f.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0';
+        f.setAttribute('allow', 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture');
+        f.setAttribute('allowfullscreen', '');
+        f.setAttribute('title', el.getAttribute('aria-label') || 'YouTube');
+        el.innerHTML = '';
+        el.appendChild(f);
+        el.style.cursor = 'default';
+      }
+      document.querySelectorAll('.gc-video-frame[data-yt]').forEach(function (el) {
+        el.addEventListener('click', function () { play(el); });
+        el.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); play(el); }
+        });
       });
     })();
   </script>
