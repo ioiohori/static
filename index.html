@@ -193,6 +193,11 @@
       opacity: 0.85;
     }
 
+    .gc-ticket-cta {
+      text-align: center;
+      margin-top: 22px;
+    }
+
     /* チケットセンター */
     .gc-ticket-center {
       background: #faf6f7;
@@ -219,6 +224,7 @@
     }
     .gc-web-btn {
       display: inline-block;
+      max-width: 100%;
       background: #9b4d62;
       color: #fff;
       padding: 12px 40px;
@@ -347,6 +353,89 @@
       font-weight: 300;
       color: #444;
     }
+    /* インタビュー誘導バー */
+    .gc-iv-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px 16px;
+      background: #6b2838;
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 20px;
+      letter-spacing: 0.05em;
+      transition: background 0.3s;
+    }
+    .gc-iv-bar:hover { background: #8a3a4d; }
+    .gc-iv-bar-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.85em;
+      letter-spacing: 0.25em;
+      color: #e8c9a0;
+    }
+    .gc-iv-bar-text { font-size: 0.98em; font-weight: 300; }
+    .gc-iv-bar-arrow { color: #e8c9a0; }
+
+    /* 最下部固定 チケットセンターバー */
+    body { padding-bottom: 76px; }
+    .gc-cta-bar {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 200;
+      background: rgba(28, 18, 24, 0.97);
+      border-top: 1px solid rgba(212, 165, 116, 0.45);
+      box-shadow: 0 -3px 14px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px 22px;
+      padding: 12px 20px;
+      font-family: 'Noto Serif JP', 'Yu Mincho', serif;
+    }
+    .gc-cta-info {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4px 12px;
+      justify-content: center;
+    }
+    .gc-cta-label {
+      font-size: 0.8em;
+      letter-spacing: 0.12em;
+      color: #e8c9a0;
+    }
+    .gc-cta-tel {
+      font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', sans-serif;
+      font-size: 1.35em;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .gc-cta-tel:hover { color: #e8c9a0; }
+    .gc-cta-hours {
+      font-size: 0.78em;
+      color: #b3a1a8;
+    }
+    .gc-cta-btn {
+      display: inline-block;
+      background: #9b4d62;
+      color: #fff;
+      text-decoration: none;
+      padding: 9px 22px;
+      border-radius: 4px;
+      font-size: 0.9em;
+      letter-spacing: 0.06em;
+      white-space: nowrap;
+      transition: background 0.3s;
+    }
+    .gc-cta-btn:hover { background: #b85f77; }
+
     /* 動画 */
     .gc-videos {
       display: flex;
@@ -531,6 +620,16 @@
       .headtertop { flex-wrap: wrap; }
       .headtertop li:first-child { display: none; } .headtertop li { margin: 0; }
       .headtertop li a { height: 42px; font-size: 0.8em; padding: 0 12px; letter-spacing: 0.05em; }
+      .gc-iv-bar { padding: 12px 15px; gap: 4px 10px; }
+      .gc-iv-bar-label { font-size: 0.72em; letter-spacing: 0.2em; }
+      .gc-iv-bar-text { font-size: 0.88em; }
+      body { padding-bottom: 96px; }
+      .gc-cta-bar { gap: 4px 12px; padding: 10px 12px; }
+      .gc-cta-info { width: 100%; }
+      .gc-cta-label { font-size: 0.72em; }
+      .gc-cta-tel { font-size: 1.25em; }
+      .gc-cta-hours { font-size: 0.7em; width: 100%; text-align: center; }
+      .gc-cta-btn { padding: 8px 18px; font-size: 0.82em; }
       .gc-hero-overlay { padding: 40px 20px 20px; }
       .gc-hero-title { font-size: 1.8em; }
       .gc-hero-sub { font-size: 0.95em; }
@@ -561,6 +660,7 @@
       .gc-ticket-table th, .gc-ticket-table td { font-size: 0.85em; padding: 10px; white-space: nowrap; }
       .gc-mg-link { padding: 12px 25px; font-size: 0.95em; }
       .gc-ticket-center-tel { font-size: 1.4em; }
+      .gc-web-btn { padding: 12px 18px; font-size: 0.85em; letter-spacing: 0.05em; }
       .gc-pg-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
       .gc-pg-table th, .gc-pg-table td { font-size: 0.85em; padding: 10px; }
       .gc-profile { flex-direction: column; align-items: center; }
@@ -596,6 +696,13 @@
   </header>
 
   <div class="gc-page">
+
+    <!-- インタビューへの誘導 -->
+    <a class="gc-iv-bar" href="garancha-interview2026.html">
+      <span class="gc-iv-bar-label">SPECIAL INTERVIEW</span>
+      <span class="gc-iv-bar-text">エリーナ・ガランチャ　インタビューを公開しました</span>
+      <span class="gc-iv-bar-arrow">→</span>
+    </a>
 
     <!-- ヒーロー -->
     <div class="gc-hero">
@@ -798,6 +905,9 @@
             テイト・コーポレーション　<a href="mailto:webmaster@tate.jp">webmaster@tate.jp</a></td>
         </tr>
       </table>
+      <div class="gc-ticket-cta">
+        <a href="https://maichike.com/o/20108/events/794" target="_blank" class="gc-web-btn">テイト・チケットセンター（マイチケ） →</a>
+      </div>
     </div>
 
     <div class="gc-divider"></div>
@@ -869,7 +979,7 @@
         <div class="gc-ticket-center-tel">03-6774-1968</div>
         <div class="gc-ticket-center-hours">10:00～19:00（土日祝日も受付）</div>
         <div class="gc-ticket-center-web">
-          <a href="https://maichike.com/o/20108/events/794" target="_blank" class="gc-web-btn">マイチケ →</a>
+          <a href="https://maichike.com/o/20108/events/794" target="_blank" class="gc-web-btn">テイト・チケットセンター（マイチケ） →</a>
         </div>
       </div>
     </div>
@@ -980,6 +1090,16 @@
       <a href="https://www.youtube.com/@Tate_Corporation" target="_blank" rel="noopener" aria-label="YouTube" class="sns-yt"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
     </div>
   </footer>
+
+  <!-- 最下部固定 チケットセンターバー -->
+  <div class="gc-cta-bar">
+    <div class="gc-cta-info">
+      <span class="gc-cta-label">テイト・チケットセンター</span>
+      <a class="gc-cta-tel" href="tel:0367741968">03-6774-1968</a>
+      <span class="gc-cta-hours">10:00～19:00（土日祝日も受付）</span>
+    </div>
+    <a class="gc-cta-btn" href="https://maichike.com/o/20108/events/794" target="_blank" rel="noopener">WEBで購入 →</a>
+  </div>
 
   <!-- 画像拡大表示 -->
   <div class="gc-lightbox" id="gcLightbox">
