@@ -1025,3 +1025,97 @@ body {
     bottom: 5px !important;
   }
 }
+
+
+/* 最下部固定 チケットセンターバー（全ページ共通） */
+body {
+  padding-bottom: 76px;
+}
+.gc-cta-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  background: rgba(28, 18, 24, 0.97);
+  border-top: 1px solid rgba(212, 165, 116, 0.45);
+  box-shadow: 0 -3px 14px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px 22px;
+  padding: 12px 20px;
+  font-family: 'Noto Serif JP', 'Yu Mincho', serif;
+}
+.gc-cta-info {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  justify-content: center;
+}
+.gc-cta-label {
+  font-size: 0.8em;
+  letter-spacing: 0.12em;
+  color: #e8c9a0;
+}
+.gc-cta-tel {
+  font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', sans-serif;
+  font-size: 1.35em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.gc-cta-tel:hover {
+  color: #e8c9a0;
+}
+.gc-cta-hours {
+  font-size: 0.78em;
+  color: #b3a1a8;
+}
+.gc-cta-btn {
+  display: inline-block;
+  background: #9b4d62;
+  color: #fff;
+  text-decoration: none;
+  padding: 9px 22px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  transition: background 0.3s;
+}
+.gc-cta-btn:hover {
+  background: #b85f77;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-bottom: 96px;
+  }
+  .gc-cta-bar {
+    gap: 4px 12px;
+    padding: 10px 12px;
+  }
+  .gc-cta-info {
+    width: 100%;
+  }
+  .gc-cta-label {
+    font-size: 0.72em;
+  }
+  .gc-cta-tel {
+    font-size: 1.25em;
+  }
+  .gc-cta-hours {
+    font-size: 0.7em;
+    width: 100%;
+    text-align: center;
+  }
+  .gc-cta-btn {
+    padding: 8px 18px;
+    font-size: 0.82em;
+  }
+}
