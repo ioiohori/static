@@ -1031,6 +1031,9 @@ body {
 body {
   padding-bottom: 76px;
 }
+body.gc-index-top-cta {
+  padding-bottom: 0;
+}
 .gc-cta-bar {
   position: fixed;
   left: 0;
@@ -1091,10 +1094,21 @@ body {
 .gc-cta-btn:hover {
   background: #b85f77;
 }
+.gc-cta-bar.gc-cta-bar-top {
+  position: sticky;
+  top: 0;
+  bottom: auto;
+  border-top: none;
+  border-bottom: 1px solid rgba(212, 165, 116, 0.45);
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.3);
+}
 
 @media screen and (max-width: 768px) {
   body {
     padding-bottom: 96px;
+  }
+  body.gc-index-top-cta {
+    padding-bottom: 0;
   }
   .gc-cta-bar {
     gap: 4px 12px;

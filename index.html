@@ -370,29 +370,6 @@
       font-weight: 300;
       color: #444;
     }
-    /* インタビュー誘導バー */
-    .gc-iv-bar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 6px 16px;
-      background: #6b2838;
-      color: #fff;
-      text-decoration: none;
-      padding: 14px 20px;
-      letter-spacing: 0.05em;
-      transition: background 0.3s;
-      position: sticky;
-      top: 0;
-      z-index: 150;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.25);
-    }
-    .gc-iv-bar:hover { background: #8a3a4d; }
-    .gc-iv-bar-text { font-size: 1.25em; font-weight: 600; }
-    .gc-iv-bar-arrow { color: #e8c9a0; }
-
-
     /* 動画 */
     .gc-videos {
       display: flex;
@@ -404,6 +381,27 @@
       flex: 1 1 260px;
       min-width: 240px;
       max-width: 300px;
+    }
+    a.gc-video-item-link {
+      text-decoration: none;
+      color: inherit;
+    }
+    a.gc-video-item-link .gc-video-frame {
+      cursor: pointer;
+    }
+    .gc-video-play-read {
+      width: auto;
+      min-width: 54px;
+      padding: 0 12px;
+      font-size: 0.72em;
+      letter-spacing: 0.08em;
+      color: #fff;
+    }
+    .gc-video-play-read::before {
+      display: none;
+    }
+    .gc-video-play-read::after {
+      content: "READ";
     }
     .gc-video-frame {
       position: relative;
@@ -577,8 +575,6 @@
       .headtertop { flex-wrap: wrap; }
       .headtertop li:first-child { display: none; } .headtertop li { margin: 0; }
       .headtertop li a { height: 42px; font-size: 0.8em; padding: 0 12px; letter-spacing: 0.05em; }
-      .gc-iv-bar { padding: 14px 15px; gap: 4px 10px; }
-      .gc-iv-bar-text { font-size: 1.15em; font-weight: 600; line-height: 1.5; }
       .gc-hero-overlay { padding: 40px 20px 20px; }
       .gc-hero-title { font-size: 1.8em; }
       .gc-hero-sub { font-size: 0.95em; }
@@ -629,7 +625,7 @@
   </style>
 </head>
 
-<body>
+<body class="gc-index-top-cta">
   <header>
     <div class="headerImages">
       <img class="logo" src="headernavi/logo2_white.png" alt="テイト・コーポレーション">
@@ -645,11 +641,15 @@
 
   <div class="gc-page">
 
-    <!-- インタビューへの誘導 -->
-    <a class="gc-iv-bar" href="garancha-interview2026.html">
-      <span class="gc-iv-bar-text">エリーナ・ガランチャ　インタビューを公開しました</span>
-      <span class="gc-iv-bar-arrow">→</span>
-    </a>
+    <!-- 上部固定 チケットセンターバー -->
+    <div class="gc-cta-bar gc-cta-bar-top">
+      <div class="gc-cta-info">
+        <span class="gc-cta-label">テイト・チケットセンター</span>
+        <a class="gc-cta-tel" href="tel:0367741968">03-6774-1968</a>
+        <span class="gc-cta-hours">10:00～19:00（土日祝日も受付）</span>
+      </div>
+      <a class="gc-cta-btn" href="https://maichike.com/o/20108/events/794" target="_blank" rel="noopener">WEBで購入 →</a>
+    </div>
 
     <!-- ヒーロー -->
     <div class="gc-hero">
@@ -901,6 +901,13 @@
     <div class="gc-section">
       <div class="gc-section-title">Movie<span class="ja">動画</span></div>
       <div class="gc-videos">
+        <a class="gc-video-item gc-video-item-link" href="garancha-interview2026.html">
+          <div class="gc-video-frame">
+            <img src="index/garancha_interview2026.jpg" alt="エリーナ・ガランチャ インタビュー" loading="lazy">
+            <span class="gc-video-play gc-video-play-read" aria-hidden="true"></span>
+          </div>
+          <div class="gc-video-title">エリーナ・ガランチャ　インタビューを公開しました</div>
+        </a>
         <div class="gc-video-item">
           <div class="gc-video-frame" data-yt="TiAQRAWb2kA" role="button" tabindex="0" aria-label="歌劇『トスカ』より”歌に生き、恋に生き” の動画を再生">
             <img src="https://img.youtube.com/vi/TiAQRAWb2kA/hqdefault.jpg" alt="歌劇『トスカ』より”歌に生き、恋に生き”" loading="lazy">
@@ -1047,16 +1054,6 @@
       <a href="https://www.youtube.com/@Tate_Corporation" target="_blank" rel="noopener" aria-label="YouTube" class="sns-yt"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
     </div>
   </footer>
-
-  <!-- 最下部固定 チケットセンターバー -->
-  <div class="gc-cta-bar">
-    <div class="gc-cta-info">
-      <span class="gc-cta-label">テイト・チケットセンター</span>
-      <a class="gc-cta-tel" href="tel:0367741968">03-6774-1968</a>
-      <span class="gc-cta-hours">10:00～19:00（土日祝日も受付）</span>
-    </div>
-    <a class="gc-cta-btn" href="https://maichike.com/o/20108/events/794" target="_blank" rel="noopener">WEBで購入 →</a>
-  </div>
 
   <!-- 画像拡大表示 -->
   <div class="gc-lightbox" id="gcLightbox">
