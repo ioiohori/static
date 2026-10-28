@@ -74,7 +74,7 @@ jobs:
           while IFS= read -r f; do
             [ -z "$f" ] && continue
             case "$f" in
-              .github/*|.claude/*|.gitignore|.gitattributes|CLAUDE.md|README*|.git/*)
+              .github/*|.claude/*|.gitignore|.gitattributes|CLAUDE.md|AGENTS.md|README*|.git/*)
                 echo "$f" >> skipped.txt; continue;;
             esac
             if [ ! -f "$f" ]; then
